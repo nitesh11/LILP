@@ -1,0 +1,13 @@
+name: Feature Bundle
+description: 'Provides a Features Bundle to (mostly) regenerate this project.'
+type: module
+# core: 8.x
+dependencies:
+  - features
+package: 'Paragraphs Base'
+
+# Information added by Drupal.org packaging script on 2017-01-07
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'paragraphs_base'
+datestamp: 1483813151

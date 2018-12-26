@@ -1,0 +1,13 @@
+name: Styles
+description: 'Provides Classy Paragraphs styles for containers.. '
+type: module
+# core: 8.x
+dependencies:
+  - classy_paragraphs
+package: 'Paragraphs Base'
+
+# Information added by Drupal.org packaging script on 2017-01-07
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'paragraphs_base'
+datestamp: 1483813151
