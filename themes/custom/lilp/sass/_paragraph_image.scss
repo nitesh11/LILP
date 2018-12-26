@@ -1,0 +1,51 @@
+.paragraphs-base-image {
+  height: 100%;
+  display: table;
+  display: inline-grid;
+  width: 100%;
+  .paragraph-image {
+    background-repeat: no-repeat;
+    min-height: 775px;
+    height: 100%;
+  	background-size: cover;
+  	position: relative;
+  	margin-bottom: 0;
+    z-index: 0;
+  	&::before {
+  		content: "";
+  		display: block;
+  		height: 100%;
+  		position: absolute;
+  		width: 100%;
+  		z-index: 1;
+  	}
+  	.hero-text{
+  		display: table;
+      width: 100%;
+      height: 100%;
+  	}
+  	.hero-text-inner{
+  		position: relative;
+      display: table-cell;
+      vertical-align: middle;
+      z-index: 5;
+      padding-top: 10px;
+	    padding-left: 20%;
+	    padding-right: 20%;
+      text-align: center;
+      color: white;
+      @media screen and (max-width: 768px) {
+  	  	padding-bottom: 125px;
+  	    padding-top: 10px;
+  	    padding-left: 15px;
+  	    padding-right: 15px;
+    	}
+  	}
+  	h2 {
+  		padding-bottom: 25px;
+  	}
+  	p {
+  		padding-top: 0;
+  	}
+  }
+}
