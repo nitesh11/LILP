@@ -47,22 +47,9 @@
   ]
 %}
 {% block paragraph %}
-
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      <div class="{{ paragraph.bundle|clean_class }}">
-        <div class="paragraph-image">
-          {{ content.field_paragraphs_base_image }}
-        </div>
-        <div class="paragraph-description-wrapper">
-          <h2 class="paragraph-title">
-            {{ content.field_title }}
-          </h2>
-          <div class="paragraph-description">
-            {{ content.field_paragraphs_base_text | raw }}
-          </div>
-        </div>
-      </div>
+      {{ content }}
     {% endblock %}
   </div>
 {% endblock paragraph %}
