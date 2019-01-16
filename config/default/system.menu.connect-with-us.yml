@@ -1,0 +1,8 @@
+uuid: b940df3f-bb85-42b9-9f9b-062fc5f12c2e
+langcode: en
+status: true
+dependencies: {  }
+id: connect-with-us
+label: 'Connect with us'
+description: 'Connect with us Menu block.'
+locked: false

@@ -1,0 +1,9 @@
+uuid: 48f09175-b579-4745-851f-4382feb7f4ac
+langcode: de
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lFUxYtizx4qALHaSdj7zB-FrlSY-yOrwjJn21cxguaY
+name: paragraphs_base_image
+label: paragraphs_base_image
+effects: {  }

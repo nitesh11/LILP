@@ -1,0 +1,28 @@
+uuid: 9064d27d-7825-42a3-b23a-a4ea876ea228
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraphs_base_text.field_paragraphs_base_text
+    - paragraphs.paragraphs_type.paragraphs_base_text
+  module:
+    - text
+_core:
+  default_config_hash: 7ags6uqppeXNqXqSsvvY1QTe9dVMRbx9q1tNGLS_qnk
+id: paragraph.paragraphs_base_text.default
+targetEntityType: paragraph
+bundle: paragraphs_base_text
+mode: default
+content:
+  field_paragraphs_base_text:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

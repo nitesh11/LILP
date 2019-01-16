@@ -1,0 +1,11 @@
+uuid: c5a286b4-f3f1-45af-9c73-af6e300c1a13
+langcode: de
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 01aSr8LozF3d_EoM_76dh4eQzlMGqb9S2pu5xq2rzEE
+id: paragraphs_base_text
+label: Text
+icon_uuid: null
+description: null
+behavior_plugins: {  }

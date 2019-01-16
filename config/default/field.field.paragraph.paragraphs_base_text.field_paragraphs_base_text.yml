@@ -1,0 +1,23 @@
+uuid: e6a644cd-cead-4522-b831-357bf24686b2
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs_base_text
+    - paragraphs.paragraphs_type.paragraphs_base_text
+  module:
+    - text
+_core:
+  default_config_hash: fegsg-OAaRMFAJzmPTJqBmPmxXhjsJY9zRHgayF6dzg
+id: paragraph.paragraphs_base_text.field_paragraphs_base_text
+field_name: field_paragraphs_base_text
+entity_type: paragraph
+bundle: paragraphs_base_text
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: 3283c45e-424a-40c7-873c-85f36bd606ab
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lilp
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: lilp_page_title
+theme: lilp
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

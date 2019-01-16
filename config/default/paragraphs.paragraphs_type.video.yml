@@ -1,0 +1,9 @@
+uuid: 536d594a-72b4-4963-a01b-e34ee38d6157
+langcode: en
+status: true
+dependencies: {  }
+id: video
+label: Video
+icon_uuid: null
+description: "Paragraph type for Videos with Title, Description and Video.\t\r\n"
+behavior_plugins: {  }

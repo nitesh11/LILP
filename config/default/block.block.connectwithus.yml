@@ -1,0 +1,24 @@
+uuid: d6440a57-46c4-484b-900f-b5fa37f75d16
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.connect-with-us
+  module:
+    - system
+  theme:
+    - bootstrap
+id: connectwithus
+theme: bootstrap
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:connect-with-us'
+settings:
+  id: 'system_menu_block:connect-with-us'
+  label: 'Connect with us'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

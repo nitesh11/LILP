@@ -1,0 +1,17 @@
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: 'public://favicon_0.ico'
+  url: 'http://localhost:8080/lilp/sites/default/files/favicon_0.ico'
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+schemas:
+  bootstrap: 8000
+  lilp: 8000

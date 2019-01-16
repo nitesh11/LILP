@@ -1,0 +1,14 @@
+uuid: 028a6dd0-925a-484a-ae62-a52f397c7b34
+name: LILP
+mail: nitesh.sethia@hotmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

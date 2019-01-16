@@ -1,0 +1,22 @@
+uuid: 56d89cdc-7b0a-43f8-a5ed-92ff1587708b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - lilp
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: lilp_help
+theme: lilp
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

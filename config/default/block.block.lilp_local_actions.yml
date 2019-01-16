@@ -1,0 +1,20 @@
+uuid: ab3a18e9-cdb5-43e6-9dcd-ae09369a0bc5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lilp
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: lilp_local_actions
+theme: lilp
+region: header
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

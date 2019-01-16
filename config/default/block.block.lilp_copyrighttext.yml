@@ -1,0 +1,25 @@
+uuid: 2baa40c1-422c-4df0-b0ed-6b59bfdd97cb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cf153025-98f3-400e-a69c-bf49f20742ca'
+  module:
+    - block_content
+  theme:
+    - lilp
+id: lilp_copyrighttext
+theme: lilp
+region: footer
+weight: -4
+provider: null
+plugin: 'block_content:cf153025-98f3-400e-a69c-bf49f20742ca'
+settings:
+  id: 'block_content:cf153025-98f3-400e-a69c-bf49f20742ca'
+  label: 'Copyright & text'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
