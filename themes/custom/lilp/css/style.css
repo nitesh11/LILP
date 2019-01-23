@@ -35,11 +35,66 @@ h5 {
   color: #98C93C;
 }
 body .container {
-	width: 100%;
+  width: 100%;
 }
 
+/* Footer */
 footer {
-  background: gray;
+  background: #47545c;
+}
+footer .region-footer {
+  margin: 0 10%;
+}
+@media screen and (max-width: 768px) {
+  footer .region-footer {
+    margin: 0;
+  }
+}
+footer .region-footer .menu--connect-with-us {
+  text-align: right;
+}
+@media screen and (max-width: 768px) {
+  footer .region-footer .menu--connect-with-us {
+    text-align: center;
+  }
+}
+footer .region-footer .menu--connect-with-us li {
+  display: inline-block;
+}
+footer .region-footer .menu--connect-with-us li a {
+  color: white;
+}
+footer .region-footer #block-lilp-footer {
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  footer .region-footer #block-lilp-footer {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .region-footer #block-lilp-footer .menu--footer {
+    text-align: center;
+  }
+}
+footer .region-footer #block-lilp-footer .menu--footer li {
+  display: inline-block;
+}
+footer .region-footer #block-lilp-footer .menu--footer li a {
+  color: #619600;
+}
+footer .region-footer #block-lilp-copyrighttext {
+  text-align: right;
+  color: #b2b2b2;
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  footer .region-footer #block-lilp-copyrighttext {
+    text-align: center;
+    float: none;
+  }
 }
 
 .paragraphs-base-image {
@@ -104,4 +159,81 @@ footer {
   border-bottom: 1px solid #b2b2b2;
   padding: 30px;
   font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+  .paragraphs-base-text .paragraph-description {
+    margin: 0;
+  }
+}
+
+/* Article Type Paragraph */
+.paragraph--type--articles {
+  margin: 0 7%;
+  clear: left;
+  padding: 20px;
+}
+.paragraph--type--articles h2 {
+  font-family: District Bold;
+  font-size: 16px;
+  font-weight: bold;
+}
+.paragraph--type--articles h2 a {
+  color: #48535B;
+}
+.paragraph--type--articles .field--name-field-author {
+  font-family: District Book Italic;
+  font-size: 16px;
+  color: #48535B;
+}
+.paragraph--type--articles .field--name-field-teaser-text {
+  font-family: District Book;
+  font-size: 12px;
+  color: #48535B;
+}
+.paragraph--type--articles .field--name-field-link {
+  border-top: 1px solid #47545c;
+  display: inline-block;
+  margin-top: 15px;
+  padding-top: 20px;
+}
+.paragraph--type--articles .field--name-field-link a {
+  color: #F49206;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.one_article .field--name-field-article > .field--item {
+  width: 75%;
+  float: left;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .one_article .field--name-field-article > .field--item {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.two_articles .field--name-field-article > .field--item {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .two_articles .field--name-field-article > .field--item {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.three_articles .field--name-field-article > .field--item {
+  width: 33%;
+  float: left;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .three_articles .field--name-field-article > .field--item {
+    width: 100%;
+    padding: 0;
+  }
 }

@@ -1,3 +1,48 @@
 footer {
-  background: gray;
+  background: #47545c;
+  .region-footer {
+    margin: 0 10%;
+    @media screen and (max-width: 768px) {
+      margin: 0;
+    }
+    .menu--connect-with-us {
+      text-align: right;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+      li {
+        display: inline-block;
+        a {
+          color: white;
+        }
+      }
+    }
+    #block-lilp-footer {
+      display: inline-block;
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+      .menu--footer {
+        @media screen and (max-width: 768px) {
+          text-align: center;        }
+        li {
+          display: inline-block;
+          a {
+            color: #619600;
+          }
+        }
+      }
+    }
+    #block-lilp-copyrighttext {
+      text-align: right;
+      color: #b2b2b2;
+      display: inline-block;
+      float: right;
+      font-size: 14px;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+        float: none;
+      }
+    }
+  }
 }

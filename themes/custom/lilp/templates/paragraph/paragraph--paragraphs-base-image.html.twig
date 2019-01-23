@@ -44,7 +44,7 @@
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
-    'status1'
+    'status'
   ]
 %}
 {% block paragraph %}
@@ -67,6 +67,4 @@
     {% endblock %}
   </div>
 {% endblock paragraph %}
-
-        
-         
+ 
