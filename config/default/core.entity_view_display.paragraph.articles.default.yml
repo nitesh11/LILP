@@ -1,0 +1,32 @@
+uuid: 8006c6b0-5586-4f69-a69d-288593d65202
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.articles.field_article
+    - field.field.paragraph.articles.field_layout
+    - paragraphs.paragraphs_type.articles
+  module:
+    - options
+id: paragraph.articles.default
+targetEntityType: paragraph
+bundle: articles
+mode: default
+content:
+  field_article:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_layout:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden: {  }

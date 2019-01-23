@@ -1,0 +1,28 @@
+uuid: 293dde67-e7ab-4b1b-b6de-a83be2c70d37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_article
+    - node.type.article
+    - paragraphs.paragraphs_type.articles
+id: paragraph.articles.field_article
+field_name: field_article
+entity_type: paragraph
+bundle: articles
+label: Article
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

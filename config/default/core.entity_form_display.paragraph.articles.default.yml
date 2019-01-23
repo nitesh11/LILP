@@ -1,0 +1,32 @@
+uuid: 4ee186dc-95c9-4bcb-b45f-a70761bb9d23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.articles.field_article
+    - field.field.paragraph.articles.field_layout
+    - paragraphs.paragraphs_type.articles
+id: paragraph.articles.default
+targetEntityType: paragraph
+bundle: articles
+mode: default
+content:
+  field_article:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_layout:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
