@@ -1,0 +1,52 @@
+uuid: a7e4a37a-477a-4e16-be86-43a82f671685
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_infographics
+    - paragraphs.paragraphs_type.data_display
+    - paragraphs.paragraphs_type.infographic
+  module:
+    - entity_reference_revisions
+id: paragraph.data_display.field_infographics
+field_name: field_infographics
+entity_type: paragraph
+bundle: data_display
+label: Infographics
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      infographic: infographic
+    target_bundles_drag_drop:
+      accordion:
+        weight: 9
+        enabled: false
+      articles:
+        weight: 10
+        enabled: false
+      blocks:
+        weight: 11
+        enabled: false
+      data_display:
+        weight: 12
+        enabled: false
+      infographic:
+        enabled: true
+        weight: 13
+      paragraphs_base_image:
+        weight: 14
+        enabled: false
+      paragraphs_base_text:
+        weight: 15
+        enabled: false
+      video:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

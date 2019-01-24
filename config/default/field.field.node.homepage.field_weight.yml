@@ -1,0 +1,23 @@
+uuid: ab98ea57-2c0b-41a7-8317-67d1e0c0c978
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.homepage
+id: node.homepage.field_weight
+field_name: field_weight
+entity_type: node
+bundle: homepage
+label: Weight
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

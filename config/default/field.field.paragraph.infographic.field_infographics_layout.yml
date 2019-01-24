@@ -1,0 +1,21 @@
+uuid: 1f5e153a-524e-4fb7-a840-782e27e8a6be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_infographics_layout
+    - paragraphs.paragraphs_type.infographic
+  module:
+    - options
+id: paragraph.infographic.field_infographics_layout
+field_name: field_infographics_layout
+entity_type: paragraph
+bundle: infographic
+label: 'Infographics Layout'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

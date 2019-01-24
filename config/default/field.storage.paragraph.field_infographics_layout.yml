@@ -1,25 +1,25 @@
-uuid: c1394f9c-e53b-462f-a3c8-63d0f5ae794b
+uuid: 874be77f-0642-4480-affc-52495f47f8fc
 langcode: en
 status: true
 dependencies:
   module:
     - options
     - paragraphs
-id: paragraph.field_layout
-field_name: field_layout
+id: paragraph.field_infographics_layout
+field_name: field_infographics_layout
 entity_type: paragraph
 type: list_string
 settings:
   allowed_values:
     -
-      value: one-article
-      label: '1 Column'
+      value: twenty-five-percent
+      label: '25% Layout'
     -
-      value: two-articles
-      label: '2 Column'
+      value: thirty-three-percent
+      label: '33% Layout'
     -
-      value: three-articles
-      label: '3 Column'
+      value: fifty-percent
+      label: '50% Layout'
   allowed_values_function: ''
 module: options
 locked: false

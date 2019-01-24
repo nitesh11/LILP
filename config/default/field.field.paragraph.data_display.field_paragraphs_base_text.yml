@@ -1,0 +1,21 @@
+uuid: 17c38dfa-5f23-440b-a62a-d0ace6cfbf10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs_base_text
+    - paragraphs.paragraphs_type.data_display
+  module:
+    - text
+id: paragraph.data_display.field_paragraphs_base_text
+field_name: field_paragraphs_base_text
+entity_type: paragraph
+bundle: data_display
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

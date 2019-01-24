@@ -1,0 +1,21 @@
+uuid: 005f9547-0df4-444d-9b96-127ed7a5ea54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs_base_text
+    - paragraphs.paragraphs_type.infographic
+  module:
+    - text
+id: paragraph.infographic.field_paragraphs_base_text
+field_name: field_paragraphs_base_text
+entity_type: paragraph
+bundle: infographic
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -202,37 +202,37 @@ footer .region-footer #block-lilp-copyrighttext {
   font-size: 12px;
 }
 
-.one_article .field--name-field-article > .field--item {
+.one-article .field--name-field-article > .field--item {
   width: 75%;
   float: left;
   padding: 20px;
 }
 @media screen and (max-width: 768px) {
-  .one_article .field--name-field-article > .field--item {
+  .one-article .field--name-field-article > .field--item {
     width: 100%;
     padding: 0;
   }
 }
 
-.two_articles .field--name-field-article > .field--item {
+.two-articles .field--name-field-article > .field--item {
   width: 50%;
   float: left;
   padding: 20px;
 }
 @media screen and (max-width: 768px) {
-  .two_articles .field--name-field-article > .field--item {
+  .two-articles .field--name-field-article > .field--item {
     width: 100%;
     padding: 0;
   }
 }
 
-.three_articles .field--name-field-article > .field--item {
+.three-articles .field--name-field-article > .field--item {
   width: 33%;
   float: left;
   padding: 20px;
 }
 @media screen and (max-width: 768px) {
-  .three_articles .field--name-field-article > .field--item {
+  .three-articles .field--name-field-article > .field--item {
     width: 100%;
     padding: 0;
   }

@@ -1,0 +1,9 @@
+uuid: 5a9e5e66-ecab-4de5-8539-802b2b75fbca
+langcode: en
+status: true
+dependencies: {  }
+id: data_display
+label: 'Data display'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

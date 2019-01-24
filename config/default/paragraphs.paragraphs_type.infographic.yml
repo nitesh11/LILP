@@ -1,0 +1,9 @@
+uuid: 317fc882-b054-49e8-853d-89f2ce24b207
+langcode: en
+status: true
+dependencies: {  }
+id: infographic
+label: Infographic
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

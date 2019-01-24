@@ -1,0 +1,42 @@
+uuid: 42a1fb10-fef8-42db-a58d-3a6767679f31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.data_display.field_infographics
+    - field.field.paragraph.data_display.field_paragraphs_base_text
+    - field.field.paragraph.data_display.field_title
+    - paragraphs.paragraphs_type.data_display
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.data_display.default
+targetEntityType: paragraph
+bundle: data_display
+mode: default
+content:
+  field_infographics:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_paragraphs_base_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
