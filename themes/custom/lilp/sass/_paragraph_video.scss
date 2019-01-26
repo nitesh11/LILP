@@ -1,0 +1,20 @@
+.paragraph--type--video {
+  .fifty-percent {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      float: none;
+      padding: 0;
+    }
+  }
+  .video-title {
+    color: #619700;
+    margin-bottom: 20px;
+  }
+  .video-description {
+    margin-top: 25px;
+    text-align: center;
+  }
+}

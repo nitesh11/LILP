@@ -17,7 +17,6 @@ h1 {
 h2 {
   font-family: District-Book;
   font-size: 40px;
-  color: #ffffff;
 }
 h3 {
   font-family: District-Book;
@@ -202,38 +201,24 @@ footer .region-footer #block-lilp-copyrighttext {
   font-size: 12px;
 }
 
-.one-article .field--name-field-article > .field--item {
-  width: 75%;
-  float: left;
-  padding: 20px;
-}
-@media screen and (max-width: 768px) {
-  .one-article .field--name-field-article > .field--item {
-    width: 100%;
-    padding: 0;
-  }
-}
-
-.two-articles .field--name-field-article > .field--item {
+/* Video */
+.paragraph--type--video .fifty-percent {
   width: 50%;
   float: left;
   padding: 20px;
 }
 @media screen and (max-width: 768px) {
-  .two-articles .field--name-field-article > .field--item {
+  .paragraph--type--video .fifty-percent {
     width: 100%;
+    float: none;
     padding: 0;
   }
 }
-
-.three-articles .field--name-field-article > .field--item {
-  width: 33%;
-  float: left;
-  padding: 20px;
+.paragraph--type--video .video-title {
+  color: #619700;
+  margin-bottom: 20px;
 }
-@media screen and (max-width: 768px) {
-  .three-articles .field--name-field-article > .field--item {
-    width: 100%;
-    padding: 0;
-  }
+.paragraph--type--video .video-description {
+  margin-top: 25px;
+  text-align: center;
 }

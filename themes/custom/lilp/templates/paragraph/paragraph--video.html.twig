@@ -51,22 +51,18 @@
   {% block paragraph %}
     <div{{ attributes.addClass(classes) }}>
       {% block content %}
-        <div class="{{ paragraph.bundle|clean_class }}">
-          <div class="paragraph-image" style='background-image: url("{{ file_url(paragraph.field_paragraphs_base_image.entity.fileuri) }}"); width: 100%; background-repeat: no-repeat;'>
-            <div class="hero-text">
-              <div class="hero-text-inner">
-                <h2 class="paragraph-title">
-                  {{ content.field_title }}
-                </h2>
-                <div class="paragraph-description">
-                  {{ content.field_paragraphs_base_text | raw }}
-                </div>  
-              </div>
-            </div>
+        <div class="{{ content.field_video_layout.0 }}">
+          <div class="video-title">
+            {{ content.field_title }}
+          </div>
+          <div class="actual-video">
+            {{ content.field_video }}
+          </div>
+          <div class="video-description">
+            {{ content.field_paragraphs_base_text|raw }}
           </div>
         </div>
       {% endblock %}
     </div>
   {% endblock paragraph %}
- </div>
- 
+</div>
