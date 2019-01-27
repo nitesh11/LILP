@@ -52,15 +52,59 @@
     <div{{ attributes.addClass(classes) }}>
       {% block content %}
         <div class="{{ content.field_video_layout.0 }}">
-          <div class="video-title">
-            {{ content.field_title }}
-          </div>
-          <div class="actual-video">
-            {{ content.field_video }}
-          </div>
-          <div class="video-description">
-            {{ content.field_paragraphs_base_text|raw }}
-          </div>
+
+          {% spaceless %}
+            {% if content.field_description_placement|render|striptags|trim == 'description-align-left' %}
+              <div class="video-description">
+                {{ content.field_paragraphs_base_text|raw }}
+              </div>
+            {% endif %}
+          {% endspaceless %}
+
+          {# Change the placement of Title Text #}
+          {% spaceless %}
+            {% if content.field_title_placement|render|striptags|trim == 'title-top' %}
+              <div class="wrapping-video-title">
+                <div class="{{ content.field_title_placement.0 }}">
+                  <span class="video-title"> {{ content.field_title }} </span>
+                  <span class="video-published-text">{{ content.field_published_text }} </span>
+                </div>
+
+                <div class="actual-video">
+                  {{ content.field_video }}
+                </div>
+              </div>
+            {% endif %}
+          {% endspaceless %}
+
+          {# Change the placement of Title Text #}
+          {% spaceless %}
+            {% if content.field_title_placement|render|striptags|trim == 'title-bottom' %}
+
+              <div class="actual-video">
+                {{ content.field_video }}
+              </div>
+              <div class="video-description-wrapper">
+                <div class="{{ content.field_title_placement.0 }} ">
+                  <span class="video-title"> {{ content.field_title }} </span>
+                  <span class="video-published-text">{{ content.field_published_text }} </span>
+                </div>
+
+                <div class="video-description">
+                  {{ content.field_paragraphs_base_text|raw }}
+                </div>
+              </div>
+
+            {% else %}
+              {% if content.field_description_placement|render|striptags|trim == 'description-align-bottom' %}
+
+                <div class="video-description">
+                  {{ content.field_paragraphs_base_text|raw }}
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endspaceless %}
+
         </div>
       {% endblock %}
     </div>

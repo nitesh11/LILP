@@ -6,6 +6,7 @@
     font-family: District Bold;
     font-size: 16px;
     font-weight: bold;
+    display: inline-block;
     a {
       color: #48535B;
     }
@@ -14,6 +15,7 @@
     font-family: District Book Italic;
     font-size: 16px;
     color: #48535B;
+    display: inline-block;
   }
   .field--name-field-teaser-text {
     font-family: District Book;
@@ -33,47 +35,47 @@
   }
 }
 
-// // If the number of Articles is a row is 1.
-// .one-article {
-//   .field--name-field-article {
-//     > .field--item {
-//       width: 75%;
-//       float: left;
-//       padding: 20px;
-//       @media screen and (max-width: 768px) {
-//         width: 100%;
-//         padding: 0;
-//       }
-//     }
-//   }
-// }
+// If the number of Articles is a row is 1.
+.one-article {
+  .field--name-field-article {
+    > .field--item {
+      width: 75%;
+      display: inline-block;
+      padding: 20px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+}
 
-// // If the number of Articles in a row is 2.
-// .two-articles {
-//   .field--name-field-article {
-//     > .field--item {
-//       width: 50%;
-//       float: left;
-//       padding: 20px;
-//       @media screen and (max-width: 768px) {
-//         width: 100%;
-//         padding: 0;
-//       }
-//     }
-//   }
-// }
+// If the number of Articles in a row is 2.
+.two-articles {
+  .field--name-field-article {
+    > .field--item {
+      width: 48%;
+      display: inline-block;
+      padding: 20px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+}
 
-// // If the number of Articles in a row is 3.
-// .three-articles {
-//   .field--name-field-article {
-//     > .field--item {
-//       width: 33%;
-//       float: left;
-//       padding: 20px;
-//       @media screen and (max-width: 768px) {
-//         width: 100%;
-//         padding: 0;
-//      }
-//     }
-//   }
-// }
+// If the number of Articles in a row is 3.
+.three-articles {
+  .field--name-field-article {
+    > .field--item {
+      width: 33%;
+      display: inline-block;
+      padding: 20px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 0;
+     }
+    }
+  }
+}

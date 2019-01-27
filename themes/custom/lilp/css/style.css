@@ -175,6 +175,7 @@ footer .region-footer #block-lilp-copyrighttext {
   font-family: District Bold;
   font-size: 16px;
   font-weight: bold;
+  display: inline-block;
 }
 .paragraph--type--articles h2 a {
   color: #48535B;
@@ -183,6 +184,7 @@ footer .region-footer #block-lilp-copyrighttext {
   font-family: District Book Italic;
   font-size: 16px;
   color: #48535B;
+  display: inline-block;
 }
 .paragraph--type--articles .field--name-field-teaser-text {
   font-family: District Book;
@@ -199,6 +201,42 @@ footer .region-footer #block-lilp-copyrighttext {
   color: #F49206;
   text-transform: uppercase;
   font-size: 12px;
+}
+
+.one-article .field--name-field-article > .field--item {
+  width: 75%;
+  display: inline-block;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .one-article .field--name-field-article > .field--item {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.two-articles .field--name-field-article > .field--item {
+  width: 48%;
+  display: inline-block;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .two-articles .field--name-field-article > .field--item {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.three-articles .field--name-field-article > .field--item {
+  width: 33%;
+  display: inline-block;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .three-articles .field--name-field-article > .field--item {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /* Video */
