@@ -1,0 +1,21 @@
+uuid: e5fb493e-1310-4326-be2d-67ee2b383fc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_placement
+    - paragraphs.paragraphs_type.video
+  module:
+    - options
+id: paragraph.video.field_title_placement
+field_name: field_title_placement
+entity_type: paragraph
+bundle: video
+label: 'Title Placement'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,27 @@
+uuid: 65483f0e-7558-4969-83a3-64e12f255a4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_styling
+field_name: field_styling
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: add-styling
+      label: 'Add the style of Quotation'
+    -
+      value: no-styling
+      label: 'Render as normal text'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

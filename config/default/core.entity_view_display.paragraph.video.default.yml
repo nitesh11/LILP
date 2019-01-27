@@ -3,11 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.video.field_description_placement
     - field.field.paragraph.video.field_paragraphs_base_text
+    - field.field.paragraph.video.field_published_text
     - field.field.paragraph.video.field_title
+    - field.field.paragraph.video.field_title_placement
     - field.field.paragraph.video.field_video
+    - field.field.paragraph.video.field_video_layout
     - paragraphs.paragraphs_type.video
   module:
+    - options
     - text
     - video_embed_field
 id: paragraph.video.default
@@ -15,23 +20,45 @@ targetEntityType: paragraph
 bundle: video
 mode: default
 content:
+  field_description_placement:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
   field_paragraphs_base_text:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_title:
-    weight: 0
+  field_published_text:
+    weight: 5
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_video:
+  field_title:
     weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title_placement:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_video:
+    weight: 2
     label: hidden
     settings:
       responsive: true
@@ -40,5 +67,12 @@ content:
       autoplay: true
     third_party_settings: {  }
     type: video_embed_field_video
+    region: content
+  field_video_layout:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
     region: content
 hidden: {  }

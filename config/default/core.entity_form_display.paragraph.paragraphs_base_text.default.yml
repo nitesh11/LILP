@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.paragraphs_base_text.field_paragraphs_base_text
+    - field.field.paragraph.paragraphs_base_text.field_styling
     - paragraphs.paragraphs_type.paragraphs_base_text
   module:
     - text
@@ -21,6 +22,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_styling:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   created: true

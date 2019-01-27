@@ -152,18 +152,21 @@ footer .region-footer #block-lilp-copyrighttext {
 }
 
 .paragraphs-base-text .paragraph-description {
-  color: #87b824;
   text-align: center;
   margin: 3% 25%;
-  border-bottom: 1px solid #b2b2b2;
   padding: 30px;
-  font-size: 25px;
 }
 @media screen and (max-width: 768px) {
   .paragraphs-base-text .paragraph-description {
     margin: 0;
   }
 }
+.paragraphs-base-text .paragraph-description.add-styling {
+  color: #87b824;
+  border-bottom: 1px solid #b2b2b2;
+  font-size: 25px;
+}
+
 
 /* Article Type Paragraph */
 .paragraph--type--articles {

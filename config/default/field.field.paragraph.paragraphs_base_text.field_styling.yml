@@ -1,0 +1,21 @@
+uuid: 380c9064-8d0a-4c34-bd24-eda28b89ae18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_styling
+    - paragraphs.paragraphs_type.paragraphs_base_text
+  module:
+    - options
+id: paragraph.paragraphs_base_text.field_styling
+field_name: field_styling
+entity_type: paragraph
+bundle: paragraphs_base_text
+label: 'Styling option'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

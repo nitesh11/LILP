@@ -1,0 +1,21 @@
+uuid: 08ba11cb-5717-4ee2-9c29-34e6de637c9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_placement
+    - paragraphs.paragraphs_type.video
+  module:
+    - options
+id: paragraph.video.field_description_placement
+field_name: field_description_placement
+entity_type: paragraph
+bundle: video
+label: 'Description Placement'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

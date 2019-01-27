@@ -1,0 +1,30 @@
+uuid: 82ea2e97-d715-45ea-897b-537d2438dc3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_video_layout
+field_name: field_video_layout
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: hundred-percent
+      label: '100% Layout'
+    -
+      value: seventy-five-percent
+      label: '75% Layout'
+    -
+      value: fifty-percent
+      label: '50% Layout'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

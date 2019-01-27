@@ -1,0 +1,27 @@
+uuid: e3b66896-2d48-405c-9c26-5b0a092a3dda
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_description_placement
+field_name: field_description_placement
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: description-align-left
+      label: 'Align Description to the Left of the Video'
+    -
+      value: description-align-bottom
+      label: 'Align Description to the bottom of the Video'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

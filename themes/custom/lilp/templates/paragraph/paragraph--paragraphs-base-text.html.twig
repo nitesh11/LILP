@@ -52,8 +52,8 @@
     <div{{ attributes.addClass(classes) }}>
       {% block content %}
         <div class="{{ paragraph.bundle|clean_class }}">
-          <div class="paragraph-description-wrapper">
-            <div class="paragraph-description">
+          <div class="paragraph-description-wrapper">            
+            <div class="paragraph-description {{ content.field_styling.0 }}">
               {{ content.field_paragraphs_base_text | raw }}
             </div>
           </div>

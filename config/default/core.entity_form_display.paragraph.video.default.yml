@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.video.field_description_placement
     - field.field.paragraph.video.field_paragraphs_base_text
+    - field.field.paragraph.video.field_published_text
     - field.field.paragraph.video.field_title
+    - field.field.paragraph.video.field_title_placement
     - field.field.paragraph.video.field_video
+    - field.field.paragraph.video.field_video_layout
     - paragraphs.paragraphs_type.video
   module:
     - text
@@ -15,13 +19,27 @@ targetEntityType: paragraph
 bundle: video
 mode: default
 content:
+  field_description_placement:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_paragraphs_base_text:
-    weight: 2
+    weight: 4
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_published_text:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_title:
     weight: 0
@@ -31,11 +49,23 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_video:
+  field_title_placement:
     weight: 1
     settings: {  }
     third_party_settings: {  }
+    type: options_select
+    region: content
+  field_video:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
     type: video_embed_field_textfield
+    region: content
+  field_video_layout:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   created: true

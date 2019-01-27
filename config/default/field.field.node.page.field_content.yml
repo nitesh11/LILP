@@ -5,6 +5,13 @@ dependencies:
   config:
     - field.storage.node.field_content
     - node.type.page
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.articles
+    - paragraphs.paragraphs_type.blocks
+    - paragraphs.paragraphs_type.data_display
+    - paragraphs.paragraphs_type.paragraphs_base_image
+    - paragraphs.paragraphs_type.paragraphs_base_text
+    - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
 id: node.page.field_content
@@ -21,9 +28,37 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     negate: 0
-    target_bundles: null
+    target_bundles:
+      accordion: accordion
+      articles: articles
+      blocks: blocks
+      data_display: data_display
+      paragraphs_base_image: paragraphs_base_image
+      paragraphs_base_text: paragraphs_base_text
+      video: video
     target_bundles_drag_drop:
-      images:
-        weight: 2
+      accordion:
+        enabled: true
+        weight: 9
+      articles:
+        enabled: true
+        weight: 10
+      blocks:
+        enabled: true
+        weight: 11
+      data_display:
+        enabled: true
+        weight: 12
+      infographic:
+        weight: 13
         enabled: false
+      paragraphs_base_image:
+        enabled: true
+        weight: 14
+      paragraphs_base_text:
+        enabled: true
+        weight: 15
+      video:
+        enabled: true
+        weight: 16
 field_type: entity_reference_revisions

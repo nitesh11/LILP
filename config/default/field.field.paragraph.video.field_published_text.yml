@@ -1,0 +1,19 @@
+uuid: b0fa4aa4-77c6-43b4-856c-29a1ddf1698b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_published_text
+    - paragraphs.paragraphs_type.video
+id: paragraph.video.field_published_text
+field_name: field_published_text
+entity_type: paragraph
+bundle: video
+label: 'Published Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
