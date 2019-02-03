@@ -5,5 +5,5 @@ dependencies: {  }
 id: data_display
 label: 'Data display'
 icon_uuid: null
-description: ''
+description: 'Paragraph type for Data Display.'
 behavior_plugins: {  }

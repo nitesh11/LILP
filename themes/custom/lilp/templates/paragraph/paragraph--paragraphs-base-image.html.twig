@@ -47,7 +47,8 @@
     'status'
   ]
 %}
-<div class="{{ paragraph.bundle|clean_class }}">
+<div class="{{ paragraph.bundle|clean_class }}" id="{{content.field_title|render|striptags|trim|clean_class }}">
+
   {% block paragraph %}
     <div{{ attributes.addClass(classes) }}>
       {% block content %}
@@ -69,4 +70,3 @@
     </div>
   {% endblock paragraph %}
  </div>
- 

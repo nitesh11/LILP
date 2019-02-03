@@ -1,0 +1,9 @@
+uuid: 482e707f-9952-4b57-a45c-3865429df49a
+langcode: en
+status: true
+dependencies: {  }
+id: quick_links
+label: 'Quick links'
+icon_uuid: null
+description: "Paragraph type for Quick links for Image Paragraph type.\t\r\n"
+behavior_plugins: {  }

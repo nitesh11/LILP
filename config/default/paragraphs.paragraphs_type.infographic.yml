@@ -5,5 +5,5 @@ dependencies: {  }
 id: infographic
 label: Infographic
 icon_uuid: null
-description: ''
+description: 'Paragraph type for the Infographic section.'
 behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: eb74e565-67e8-4860-8a82-88e5c72970e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chapters_name
+    - paragraphs.paragraphs_type.quick_links
+id: paragraph.quick_links.field_chapters_name
+field_name: field_chapters_name
+entity_type: paragraph
+bundle: quick_links
+label: Chapters
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -7,5 +7,5 @@ _core:
 id: paragraphs_base_text
 label: Text
 icon_uuid: null
-description: null
+description: 'Paragraph type for Text with Description and text style.'
 behavior_plugins: {  }

@@ -1,0 +1,21 @@
+uuid: 6e9a07c2-311f-445b-b707-89285f25aa9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.quick_links.field_chapters_name
+    - paragraphs.paragraphs_type.quick_links
+id: paragraph.quick_links.default
+targetEntityType: paragraph
+bundle: quick_links
+mode: default
+content:
+  field_chapters_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

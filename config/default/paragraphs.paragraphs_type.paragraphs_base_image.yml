@@ -7,5 +7,5 @@ _core:
 id: paragraphs_base_image
 label: Image
 icon_uuid: null
-description: null
+description: 'Paragraph type for Image with Title, Image and Description.'
 behavior_plugins: {  }

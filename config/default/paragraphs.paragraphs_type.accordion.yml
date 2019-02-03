@@ -5,5 +5,5 @@ dependencies: {  }
 id: accordion
 label: Accordion
 icon_uuid: null
-description: ''
+description: 'Paragraph type for Accordion.'
 behavior_plugins: {  }

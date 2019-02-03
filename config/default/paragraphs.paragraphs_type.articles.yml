@@ -5,5 +5,5 @@ dependencies: {  }
 id: articles
 label: Articles
 icon_uuid: null
-description: ''
+description: 'Paragraph type for Articles.'
 behavior_plugins: {  }
