@@ -3,54 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.accordion.field_link
-    - field.field.paragraph.accordion.field_paragraphs_base_image
-    - field.field.paragraph.accordion.field_paragraphs_base_text
-    - field.field.paragraph.accordion.field_title
+    - field.field.paragraph.accordion.field_accordion_content
     - paragraphs.paragraphs_type.accordion
-  module:
-    - image
-    - link
-    - text
 id: paragraph.accordion.default
 targetEntityType: paragraph
 bundle: accordion
 mode: default
 content:
-  field_link:
-    weight: 3
+  field_accordion_content:
+    weight: 4
     label: hidden
     settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      link: true
+      view_mode: default
     third_party_settings: {  }
-    type: link
-    region: content
-  field_paragraphs_base_image:
-    weight: 0
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
-  field_paragraphs_base_text:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_title:
-    weight: 1
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
+    type: entity_reference_entity_view
     region: content
 hidden: {  }

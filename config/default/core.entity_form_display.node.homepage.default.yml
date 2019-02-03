@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.homepage.body
     - field.field.node.homepage.field_link
     - field.field.node.homepage.field_media
+    - field.field.node.homepage.field_video
     - field.field.node.homepage.field_weight
     - image.style.thumbnail
     - node.type.homepage
@@ -13,6 +14,7 @@ dependencies:
     - image
     - link
     - text
+    - video_embed_field
 id: node.homepage.default
 targetEntityType: node
 bundle: homepage
@@ -42,6 +44,12 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_video:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
     region: content
   field_weight:
     weight: 26

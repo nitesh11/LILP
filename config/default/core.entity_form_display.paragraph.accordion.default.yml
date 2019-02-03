@@ -3,51 +3,21 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.accordion.field_link
-    - field.field.paragraph.accordion.field_paragraphs_base_image
-    - field.field.paragraph.accordion.field_paragraphs_base_text
-    - field.field.paragraph.accordion.field_title
+    - field.field.paragraph.accordion.field_accordion_content
     - paragraphs.paragraphs_type.accordion
-  module:
-    - image
-    - link
-    - text
 id: paragraph.accordion.default
 targetEntityType: paragraph
 bundle: accordion
 mode: default
 content:
-  field_link:
-    weight: 3
+  field_accordion_content:
+    weight: 4
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_paragraphs_base_image:
-    weight: 0
-    settings:
-      preview_image_style: ''
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_paragraphs_base_text:
-    weight: 2
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
-  field_title:
-    weight: 1
-    settings:
+      match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: entity_reference_autocomplete
     region: content
 hidden:
   created: true
