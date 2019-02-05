@@ -73,18 +73,29 @@
  */
 #}
 <li class="accordion-element-wrapper">
-  <div class="accordion-element"> 
+  <div class="accordion-element slide bg-stretch">
+
+    <a href="#" class="opener">
+      {{ label|render|striptags }}
+    </a>
+
+    <div class="text-holder">
+      <div class="info">
+        <h4 class="accordion-title">
+          {{ label|render|striptags }}
+        </h4>
+        <h4 class="accordion-description">
+          {{ content.body|render|striptags }}
+        </h4>
+        <div class="accordion-link">
+          {{ content.field_link }}
+        </div>
+      </div>
+    </div>
+
     {% set media_img_url = file_url(content.field_media.0['#item'].entity.uri.value) %}
 
     <div class="accordion-image" style='background-image: url("{{ media_img_url }}"); width: 100%; background-repeat: no-repeat;'>
-
-      {% if not page %}
-        <h2 class="accordion-title">
-          {{ label|render|striptags }}
-        </h2>
-      {% endif %}
-      
-      {{ content|without('field_media') }}
 
     </div>
   </div>
