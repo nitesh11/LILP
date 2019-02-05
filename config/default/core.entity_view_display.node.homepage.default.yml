@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.homepage.field_link
     - field.field.node.homepage.field_media
     - field.field.node.homepage.field_video
-    - field.field.node.homepage.field_weight
     - node.type.homepage
   module:
     - image
@@ -60,5 +59,4 @@ content:
     type: video_embed_field_video
     region: content
 hidden:
-  field_weight: true
   links: true
