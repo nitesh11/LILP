@@ -72,12 +72,12 @@
  * @ingroup themeable
  */
 #}
-<article{{ attributes }}>
+<article{{ attributes.addClass('post') }}>
 
   {% if not page %}
-    <h2{{ title_attributes }}>
-      {{ label|render|striptags }},
-    </h2>
+    <h3{{ title_attributes }}>
+      {{ label|render|striptags|trim }},
+    </h3>
   {% endif %}
 
   {{ content }}

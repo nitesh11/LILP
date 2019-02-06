@@ -51,104 +51,108 @@
  * @see html.html.twig
  */
 #}
-{% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
-{# Navbar #}
-{% if page.navigation or page.navigation_collapsible %}
-  {% block navbar %}
-    <header id="header" role="banner">
-      <div class="container">
-          <div class="header-content">
-            <a href="#" class="nav-opener"><span></span> <span class="sr-only">opener</span></a>
-            <div class="header-holder row">
-              <div class="col-sm-7">
-               <!-- page slogan -->
-                <span class="slogan">Making Sense of Place <span>The Lives of Cities</span></span>
-              </div>
-              <div class="col-sm-5">
-                <!-- page logo -->
-                <div class="logo">
-                  <a href="#">
-                    <img src="{{ base_path ~ directory }}/images/logo.svg" height="36" width="36" alt="The Lincoln Institute Of Land Policy" class="hide-sm">
-                    <span>A Project of <br> The Lincoln Institute of Land Policy</span>
-                  </a>
+<div id="wrapper">
+  
+  {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+  {# Navbar #}
+  {% if page.navigation or page.navigation_collapsible %}
+    {% block navbar %}
+      <header id="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+              <a href="#" class="nav-opener"><span></span> <span class="sr-only">opener</span></a>
+              <div class="header-holder row">
+                <div class="col-sm-7">
+                 <!-- page slogan -->
+                  <span class="slogan">Making Sense of Place <span>The Lives of Cities</span></span>
+                </div>
+                <div class="col-sm-5">
+                  <!-- page logo -->
+                  <div class="logo">
+                    <a href="#">
+                      <img src="{{ base_path ~ directory }}/images/logo.svg" height="36" width="36" alt="The Lincoln Institute Of Land Policy" class="hide-sm">
+                      <span>A Project of <br> The Lincoln Institute of Land Policy</span>
+                    </a>
+                  </div>
+                </div>
+              </div>            
+              <div class="drop-content">
+                <div class="drop-holder">
+                  <span class="language"><a href="#"><span>Español</span>Português</a></span>
+                  <!-- main navigation of the page -->
+                  <nav id="nav">
+                    <div class="columns">
+                      <span class="info-title">EXPLORE THE THEMES</span>
+                      <ul class="drop-menu">
+                        <li><a href="#">Municipal Fiscal Health</a></li>
+                        <li><a href="#">Climate Change</a></li>
+                        <li><a href="#">Inequality</a></li>
+                        <li><a href="#">Urban Living</a></li>
+                      </ul>
+                    </div>
+                    <div class="columns">
+                      <span class="info-title">EXPLORE THE CITIES</span>
+                      <ul class="drop-menu">
+                        <li><a href="#">Cleveland</a></li>
+                        <li><a href="#">Phoenix</a></li>
+                        <li><a href="#">Portland</a></li>
+                      </ul>
+                    </div>
+                    <div class="columns">
+                      <span class="info-title"></span>
+                      <ul class="drop-menu style01">
+                        <li><a href="#">About the Project</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </nav>
                 </div>
               </div>
-            </div>            
-            <div class="drop-content">
-              <div class="drop-holder">
-                <span class="language"><a href="#"><span>Español</span>Português</a></span>
-                <!-- main navigation of the page -->
-                <nav id="nav">
-                  <div class="columns">
-                    <span class="info-title">EXPLORE THE THEMES</span>
-                    <ul class="drop-menu">
-                      <li><a href="#">Municipal Fiscal Health</a></li>
-                      <li><a href="#">Climate Change</a></li>
-                      <li><a href="#">Inequality</a></li>
-                      <li><a href="#">Urban Living</a></li>
-                    </ul>
-                  </div>
-                  <div class="columns">
-                    <span class="info-title">EXPLORE THE CITIES</span>
-                    <ul class="drop-menu">
-                      <li><a href="#">Cleveland</a></li>
-                      <li><a href="#">Phoenix</a></li>
-                      <li><a href="#">Portland</a></li>
-                    </ul>
-                  </div>
-                  <div class="columns">
-                    <span class="info-title"></span>
-                    <ul class="drop-menu style01">
-                      <li><a href="#">About the Project</a></li>
-                      <li><a href="#">Contact Us</a></li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
             </div>
           </div>
-        </div>
-    </header>
-  {% endblock %}
-{% endif %}
-
-{# Main #}
-{% block main %}
-  <div role="main" id="main">
-
-    {# Help #}
-    {% if page.help %}
-      {% block help %}
-        {{ page.help }}
-      {% endblock %}
-    {% endif %}
-
-    {# Content #}
-    {% block content %}
-      <a id="main-content"></a>
-      {{ page.content }}
+      </header>
     {% endblock %}
+  {% endif %}
 
-  </div>
-{% endblock %}
+  {# Main #}
+  {% block main %}
+    <div role="main" id="main">
 
-{% if page.footer_left %}
-  {% block footer %}
-    <footer id="footer" class="footer" role="contentinfo">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="footer-logo">
-              <a href="/"><img src="{{ base_path ~ directory }}/images/footer-logo.svg" alt="lincoln institute of land policy" width="261" height="60"></a>
+      {# Help #}
+      {% if page.help %}
+        {% block help %}
+          {{ page.help }}
+        {% endblock %}
+      {% endif %}
+
+      {# Content #}
+      {% block content %}
+        <a id="main-content"></a>
+        {{ page.content }}
+      {% endblock %}
+
+    </div>
+  {% endblock %}
+
+  {% if page.footer_left %}
+    {% block footer %}
+      <footer id="footer" class="footer" role="contentinfo">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="footer-logo">
+                <a href="/"><img src="{{ base_path ~ directory }}/images/footer-logo.svg" alt="lincoln institute of land policy" width="261" height="60"></a>
+              </div>
+
+              {{ page.footer_left }}
             </div>
-
-            {{ page.footer_left }}
-          </div>
-          <div class="col-sm-6 align">
-            {{ page.footer_right }}
+            <div class="col-sm-6 align">
+              {{ page.footer_right }}
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-  {% endblock %}
-{% endif %}
+      </footer>
+    {% endblock %}
+  {% endif %}
+
+</div>

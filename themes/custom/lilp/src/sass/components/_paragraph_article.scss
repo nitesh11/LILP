@@ -1,39 +1,4 @@
-.paragraph--type--articles {
-  margin: 0 7%;
-  clear: left;
-  padding: 20px;
-  h2 {
-    font-family: District Bold;
-    font-size: 16px;
-    font-weight: bold;
-    display: inline-block;
-    a {
-      color: #48535B;
-    }
-  }
-  .field--name-field-author {
-    font-family: District Book Italic;
-    font-size: 16px;
-    color: #48535B;
-    display: inline-block;
-  }
-  .field--name-field-teaser-text {
-    font-family: District Book;
-    font-size: 12px;
-    color: #48535B;
-  }
-  .field--name-field-link {
-    border-top: 1px solid #47545c;
-    display: inline-block;
-    margin-top: 15px;
-    padding-top: 20px;
-    a {
-      color: #F49206;
-      text-transform: uppercase;
-      font-size: 12px;
-    }
-  }
-}
+
 
 // If the number of Articles is a row is 1.
 .one-article {
@@ -77,5 +42,117 @@
         padding: 0;
      }
     }
+  }
+}
+
+
+
+//article post  style
+.post-block {
+  color: $river-bed-approx;
+  padding: 46px 0 10px;
+  line-height: 1.5;
+  background: #f4f4f4;
+
+  @include media ('>=phone') {
+    padding-bottom: 21px;
+  }
+
+  h6 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: 700;
+
+    @include media ('>=phone') {
+      margin-bottom: 62px;
+    }
+  }
+
+  .post-holder {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h3 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-transform: capitalize;
+  }
+
+  span.author {
+    display: inline-block;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .post {
+    padding-bottom: 40px;
+
+    @include media ('>=phone') {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+      min-width: 50%;
+      padding-right: 26px;
+    }
+
+    
+    @include media ('>=tablet') {
+      padding-bottom: 50px;
+      min-width: 33.33%;
+    }
+
+    a {
+      @extend .read-more;
+    }
+  }
+
+  p {
+    margin-bottom: 18px;
+  }
+
+  .text-content {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 2;
+
+    @include media ('>=phone') {
+      margin-bottom: 21px;
+    }
+
+    &:after {
+      width: 62px;
+      height: 1px;
+      background: #55595c;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: '';
+    }
+  }
+
+  .light-box {
+    visibility: hidden;
+    position: fixed;
+    left: -99999px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 0 33px;
+  }
+
+
+  &.lightbox-active  {
+    .light-box {
+      visibility: visible;
+      position: static;
+    }
+  }
+
+  &.style01 {
+    background: #f4f4f4;
   }
 }

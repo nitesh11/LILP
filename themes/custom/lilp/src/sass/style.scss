@@ -54,6 +54,11 @@ $media-expressions: (
    COMPONENTS
    ---------------------------------------------------------*/
 @import 'components/paragraph_text';
+@import 'components/paragraph_image';
+@import 'components/paragraph_article';
+@import 'components/paragraph_infographic';
+@import 'components/paragraph_text';
+@import 'components/paragraph_video';
 
 body {
 	min-width: $base-min-width;
