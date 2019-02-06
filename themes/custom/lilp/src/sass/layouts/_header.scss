@@ -46,6 +46,9 @@
 				opacity: 1;
 			}
 		}
+		.nav-active.toolbar-tray-open & {
+			top: 79px;
+		}
 
 		&:after {
 			content: '';
@@ -373,6 +376,10 @@
 	opacity: 0;
 	visibility: hidden;
 	@include animate(opacity visibility)
+
+	.toolbar-tray-open & {
+		top: 141px;
+	}
 
 	@include media('>=tablet') {
 		top: 62px;

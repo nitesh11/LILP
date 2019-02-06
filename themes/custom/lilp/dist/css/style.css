@@ -1512,6 +1512,8 @@ h1 {
       right: 0; }
       .nav-active #header .header-content:after {
         opacity: 1; }
+    .nav-active.toolbar-tray-open #header .header-content {
+      top: 79px; }
     #header .header-content:after {
       content: '';
       position: absolute;
@@ -1750,6 +1752,8 @@ h1 {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; }
+  .toolbar-tray-open .drop-content {
+    top: 141px; }
   @media (min-width: 768px) {
     .drop-content {
       top: 62px;
