@@ -52,7 +52,7 @@
  */
 #}
 <div id="wrapper">
-  
+
   {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
   {# Navbar #}
   {% if page.navigation or page.navigation_collapsible %}
@@ -134,7 +134,7 @@
     </div>
   {% endblock %}
 
-  {% if page.footer_left %}
+  {% if (page.footer_left) or (page.footer_right) %}
     {% block footer %}
       <footer id="footer" class="footer" role="contentinfo">
         <div class="container">
