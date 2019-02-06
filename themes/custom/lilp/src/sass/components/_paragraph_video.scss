@@ -1,15 +1,17 @@
 .paragraph--type--video {
   .fifty-percent {
     &.description-align-left {
-      margin: 20%;
+      margin: 10%;
       margin-top: 5%;
+      margin-bottom: 25%;
       @media screen and (max-width: 768px) {
-        margin: 0 5%;
+        margin: 5%;
       }
       .video-description {
-        width: 24%;
+        width: 30%;
         display: inline-block;
         margin-top: 70px;
+        text-align: unset;
         @media screen and (max-width: 768px) {
           width: 100%;
           display: block;
@@ -17,7 +19,7 @@
 
       }
       .wrapping-video-title {
-        width: 70%;
+        width: 65%;
         float: right;
         @media screen and (max-width: 768px) {
           width: 100%;
