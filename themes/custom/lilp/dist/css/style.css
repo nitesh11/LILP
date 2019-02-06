@@ -2321,36 +2321,6 @@ address {
     .banner p:last-child {
       margin-bottom: 0; }
 
-.paragraph--type--articles {
-  margin: 0 7%;
-  clear: left;
-  padding: 20px; }
-  .paragraph--type--articles h2 {
-    font-family: District Bold;
-    font-size: 16px;
-    font-weight: bold;
-    display: inline-block; }
-    .paragraph--type--articles h2 a {
-      color: #48535B; }
-  .paragraph--type--articles .field--name-field-author {
-    font-family: District Book Italic;
-    font-size: 16px;
-    color: #48535B;
-    display: inline-block; }
-  .paragraph--type--articles .field--name-field-teaser-text {
-    font-family: District Book;
-    font-size: 12px;
-    color: #48535B; }
-  .paragraph--type--articles .field--name-field-link {
-    border-top: 1px solid #47545c;
-    display: inline-block;
-    margin-top: 15px;
-    padding-top: 20px; }
-    .paragraph--type--articles .field--name-field-link a {
-      color: #F49206;
-      text-transform: uppercase;
-      font-size: 12px; }
-
 .one-article .field--name-field-article > .field--item {
   width: 75%;
   display: inline-block;
@@ -2397,13 +2367,15 @@ address {
     display: flex;
     flex-wrap: wrap; }
   .post-block h3 {
+    display: inline-block;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 14px;
     text-transform: capitalize; }
-    .post-block h3 span {
-      font-weight: 400;
-      font-style: italic; }
+  .post-block span.author {
+    display: inline-block;
+    font-weight: 400;
+    font-style: italic; }
   .post-block .post {
     padding-bottom: 40px; }
     @media (min-width: 640px) {

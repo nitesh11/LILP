@@ -1,39 +1,4 @@
-.paragraph--type--articles {
-  margin: 0 7%;
-  clear: left;
-  padding: 20px;
-  h2 {
-    font-family: District Bold;
-    font-size: 16px;
-    font-weight: bold;
-    display: inline-block;
-    a {
-      color: #48535B;
-    }
-  }
-  .field--name-field-author {
-    font-family: District Book Italic;
-    font-size: 16px;
-    color: #48535B;
-    display: inline-block;
-  }
-  .field--name-field-teaser-text {
-    font-family: District Book;
-    font-size: 12px;
-    color: #48535B;
-  }
-  .field--name-field-link {
-    border-top: 1px solid #47545c;
-    display: inline-block;
-    margin-top: 15px;
-    padding-top: 20px;
-    a {
-      color: #F49206;
-      text-transform: uppercase;
-      font-size: 12px;
-    }
-  }
-}
+
 
 // If the number of Articles is a row is 1.
 .one-article {
@@ -109,15 +74,17 @@
   }
 
   h3 {
+    display: inline-block;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 14px;
     text-transform: capitalize;
+  }
 
-    span {
-      font-weight: 400;
-      font-style: italic;
-    }
+  span.author {
+    display: inline-block;
+    font-weight: 400;
+    font-style: italic;
   }
 
   .post {

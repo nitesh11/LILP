@@ -76,7 +76,7 @@
 
   {% if not page %}
     <h3{{ title_attributes }}>
-      {{ label|render|striptags }},
+      {{ label|render|striptags|trim }},
     </h3>
   {% endif %}
 
