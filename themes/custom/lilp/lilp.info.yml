@@ -1,9 +1,9 @@
 name: LILP
 type: theme
-description: This is a LILP sub theme of Bootstrap
+description: This is a LILP sub theme of Stark
 core: 8.x
 # Defines the base theme
-base theme: bootstrap
+base theme: stark
 # Defines libraries group in which we can add css/js.
 libraries:
   - lilp/global-styling
