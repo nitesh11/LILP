@@ -1,11 +1,29 @@
 .paragraph--type--video {
   .fifty-percent {
-    width: 50%;
-    padding: 20px;
-    @media screen and (max-width: 768px) {
-      width: 100%;
-      float: none;
-      padding: 0;
+    &.description-align-left {
+      margin: 0 20%;
+        margin-top: 5%;
+        @media screen and (max-width: 768px) {
+          margin: 0 5%;
+        }
+        .video-description {
+          width: 24%;
+          display: inline-block;
+          margin-top: 70px;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            display: block;
+          }
+
+        }
+        .wrapping-video-title {
+          width: 70%;
+          float: right;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            float: none;
+          }
+        }
     }
   }
   .title-top {
