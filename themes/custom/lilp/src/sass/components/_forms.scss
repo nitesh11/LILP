@@ -1,0 +1,26 @@
+.user-login-form {
+
+	-webkit-font-smoothing: antialiased;
+
+	.form-item {
+		@extend .form-group;
+		margin-bottom: 20px;
+	}
+
+	input[type="text"],
+	input[type="password"] {
+		@extend .form-control;
+	}
+	input[type="submit"] {
+		@extend .btn;
+		background-color: $atlantis;
+		color: #fff;
+	}
+
+	label {
+		display: block;
+	}
+	.description {
+		font-size: 14px;
+	}
+}

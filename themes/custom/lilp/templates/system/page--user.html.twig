@@ -18,7 +18,9 @@
       {# Content #}
       {% block content %}
         <a id="main-content"></a>
-        {{ page.content }}
+        <div class="container content-wrapper">
+          {{ page.content }}
+        </div>
       {% endblock %}
 
     </div>

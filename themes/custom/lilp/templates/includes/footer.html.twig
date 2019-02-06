@@ -1,0 +1,20 @@
+{% if (page.footer_left) or (page.footer_right) %}
+  {% block footer %}
+    <footer id="footer" class="footer" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="footer-logo">
+              <a href="/"><img src="{{ base_path ~ directory }}/images/footer-logo.svg" alt="lincoln institute of land policy" width="261" height="60"></a>
+            </div>
+
+            {{ page.footer_left }}
+          </div>
+          <div class="col-sm-6 align">
+            {{ page.footer_right }}
+          </div>
+        </div>
+      </div>
+    </footer>
+  {% endblock %}
+{% endif %}
