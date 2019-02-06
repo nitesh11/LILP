@@ -698,7 +698,7 @@ h1 {
 	}
 }
 
-h2 {
+h2, .h2 {
 	@include media('>=tablet') {
 		font-size: 40px;
 	}

@@ -47,26 +47,23 @@
     'status'
   ]
 %}
-<div class="{{ paragraph.bundle|clean_class }}" id="{{content.field_title|render|striptags|trim|clean_class }}">
+<div class="banner {{ paragraph.bundle|clean_class }}" id="{{content.field_title|render|striptags|trim|clean_class }}">
 
   {% block paragraph %}
-    <div{{ attributes.addClass(classes) }}>
-      {% block content %}
-        <div class="{{ paragraph.bundle|clean_class }}">
-          <div class="paragraph-image" style='background-image: url("{{ file_url(paragraph.field_paragraphs_base_image.entity.fileuri) }}"); width: 100%; background-repeat: no-repeat;'>
-            <div class="hero-text">
-              <div class="hero-text-inner">
-                <h2 class="paragraph-title">
-                  {{ content.field_title }}
-                </h2>
-                <div class="paragraph-description">
-                  {{ content.field_paragraphs_base_text | raw }}
-                </div>  
-              </div>
-            </div>
+    {% block content %}
+      <div class="bg-holder">
+        <img src="{{ file_url(paragraph.field_paragraphs_base_image.entity.fileuri) }}" alt="image description">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+            <h2>{{ content.field_title }}</h2>
+            <h4>
+              {{ content.field_paragraphs_base_text | raw }}
+            </h4>
           </div>
         </div>
-      {% endblock %}
-    </div>
+      </div>
+    {% endblock %}
   {% endblock paragraph %}
  </div>

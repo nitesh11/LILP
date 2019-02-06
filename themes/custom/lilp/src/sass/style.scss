@@ -23,13 +23,13 @@ $media-expressions: (
 @import 'vendors/include-media';
 
 /* ---------------------------------------------------------
-   1. Embedded fonts styles
+   VENDOR
    ---------------------------------------------------------*/
 @import 'vendors/fonts';
 @import 'vendors/icons';
 
 /* ---------------------------------------------------------
-   2. General reset
+   RESET/BASE
    ---------------------------------------------------------*/
 @import "bootstrap-custom";
 
@@ -43,14 +43,17 @@ $media-expressions: (
 @import 'base/cms-reset';
 
 /* ---------------------------------------------------------
-   3. Common site styles
+   COMMON/LAYOUT
    ---------------------------------------------------------*/
 @import 'layouts/common';
 @import 'layouts/header';
 @import 'layouts/footer';
-
 @import 'pages/inner-page';
-@import 'pages/accordion';
+
+/* ---------------------------------------------------------
+   COMPONENTS
+   ---------------------------------------------------------*/
+@import 'components/paragraph_text';
 
 body {
 	min-width: $base-min-width;

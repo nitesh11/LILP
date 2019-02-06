@@ -1,0 +1,41 @@
+.paragraphs-base-text {
+  .paragraph-description.add-styling {
+    border-left: none;
+    padding: 15px 14px 20px;
+    border-bottom: 1px solid #ccc;
+    color: $atlantis;
+    line-height: 1.25;
+    font-weight: 300;
+    margin: 0;
+
+    @extend .h2;
+
+    @include media('<tablet') {
+      font-size: 25px;
+    }
+
+    @include media ('>=tablet') {
+      padding: 20px 0 20px 15px;
+    }
+
+    // &:before {
+    //   content: '“';
+    //   position: absolute;
+    //   top: 15px;
+    //   width: 15px;
+    //   left: 14px;
+
+    //   @include media('>=tablet') {
+    //     top: 87px;
+    //     left: 12px;
+    //   }
+    // }
+
+    // &:after {
+    //   content: '“';
+    //   display: inline;
+    //   width: 15px;
+    //   margin-right: 10px;
+    // }
+  }
+}

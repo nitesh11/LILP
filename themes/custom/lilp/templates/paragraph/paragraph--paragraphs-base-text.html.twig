@@ -44,21 +44,28 @@
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
-    'status'
+    'status',
+    'testimonial-block'
   ]
 %}
 <div class="{{ paragraph.bundle|clean_class }}">
   {% block paragraph %}
-    <div{{ attributes.addClass(classes) }}>
-      {% block content %}
-        <div class="{{ paragraph.bundle|clean_class }}">
-          <div class="paragraph-description-wrapper">            
-            <div class="paragraph-description {{ content.field_styling.0 }}">
-              {{ content.field_paragraphs_base_text | raw }}
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+          <div{{ attributes.addClass(classes) }}>
+            {% block content %}
+              <div class="{{ paragraph.bundle|clean_class }}">
+                <div class="paragraph-description-wrapper">            
+                  <div class="paragraph-description {{ content.field_styling.0 }}">
+                    {{ content.field_paragraphs_base_text | raw }}
+                  </div>
+                </div>
+              </div>
+            {% endblock %}
           </div>
         </div>
-      {% endblock %}
+      </div>
     </div>
   {% endblock paragraph %}
 </div>
