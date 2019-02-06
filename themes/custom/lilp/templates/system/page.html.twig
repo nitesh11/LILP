@@ -84,25 +84,43 @@
                     <div class="columns">
                       <span class="info-title">EXPLORE THE THEMES</span>
                       <ul class="drop-menu">
-                        <li><a href="#">Municipal Fiscal Health</a></li>
-                        <li><a href="#">Climate Change</a></li>
-                        <li><a href="#">Inequality</a></li>
-                        <li><a href="#">Urban Living</a></li>
+
+                        <!-- Render the Themes Menu. -->
+                        {% set items = simplify_menu('themes') %}
+                        {% for menu_item in items.menu_tree %}
+                          <li class="menu-item">
+                            <a href="{{ menu_item.url }}" class="menu-link">{{ menu_item.text }}</a>
+                          </li>
+                        {% endfor %}
+
                       </ul>
                     </div>
                     <div class="columns">
                       <span class="info-title">EXPLORE THE CITIES</span>
                       <ul class="drop-menu">
-                        <li><a href="#">Cleveland</a></li>
-                        <li><a href="#">Phoenix</a></li>
-                        <li><a href="#">Portland</a></li>
+
+                        <!-- Render the City Menu. -->
+                        {% set items = simplify_menu('cities') %}
+                        {% for menu_item in items.menu_tree %}
+                          <li class="menu-item">
+                            <a href="{{ menu_item.url }}" class="menu-link">{{ menu_item.text }}</a>
+                          </li>
+                        {% endfor %}
+
                       </ul>
                     </div>
                     <div class="columns">
                       <span class="info-title"></span>
                       <ul class="drop-menu style01">
-                        <li><a href="#">About the Project</a></li>
-                        <li><a href="#">Contact Us</a></li>
+
+                        <!-- Render the City Menu. -->
+                        {% set items = simplify_menu('about') %}
+                        {% for menu_item in items.menu_tree %}
+                          <li class="menu-item">
+                            <a href="{{ menu_item.url }}" class="menu-link">{{ menu_item.text }}</a>
+                          </li>
+                        {% endfor %}
+
                       </ul>
                     </div>
                   </nav>

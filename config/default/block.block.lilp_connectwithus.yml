@@ -1,6 +1,6 @@
 uuid: 63c9fb8b-f1ec-4828-b525-d2bba88b67ab
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.connect-with-us
@@ -10,7 +10,7 @@ dependencies:
     - lilp
 id: lilp_connectwithus
 theme: lilp
-region: navigation
+region: footer_right
 weight: -6
 provider: null
 plugin: 'system_menu_block:connect-with-us'

@@ -1,0 +1,8 @@
+uuid: fa9e92dc-39fd-4e54-88be-057337578d74
+langcode: und
+status: true
+dependencies: {  }
+id: about
+label: About
+description: ''
+locked: false
