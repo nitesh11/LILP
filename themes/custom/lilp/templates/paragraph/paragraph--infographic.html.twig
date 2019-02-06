@@ -47,20 +47,18 @@
     'status'
   ]
 %}
-<div class="{{ paragraph.bundle|clean_class }}">
+<div class="{{ paragraph.bundle|clean_class }} {{ content.field_infographics_layout.0 }}">
   {% block paragraph %}
     <div{{ attributes.addClass(classes) }}>
       {% block content %}
-        <div class="{{ content.field_infographics_layout.0 }}">
-          <div class="infographics-image">
-            {{ content.field_paragraphs_base_image }}
-          </div>
-          <h2 class="infographics-title">
-            {{ content.field_title }}
-          </h2>
-          <div class="infographics-description">
-            {{ content.field_paragraphs_base_text }}
-          </div>
+        <div class="infographics-image">
+          {{ content.field_paragraphs_base_image }}
+        </div>
+        <h2 class="infographics-title">
+          {{ content.field_title }}
+        </h2>
+        <div class="infographics-description">
+          {{ content.field_paragraphs_base_text }}
         </div>
       {% endblock %}
     </div>
