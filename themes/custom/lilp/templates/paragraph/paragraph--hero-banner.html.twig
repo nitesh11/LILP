@@ -51,8 +51,8 @@
 <section class="top-banner {{ paragraph.bundle|clean_class }}" id="{{content.field_title|render|striptags|trim|clean_class }}">
   {% block paragraph %}
     {% block content %}
-      <div class="bg-holder">
-        <img src="{{ file_url(paragraph.field_paragraphs_base_image.entity.fileuri) }}" alt="image description" width="1921" height="1080">
+      <div class="bg-holder fade-in">
+        <img src="{{ file_url(paragraph.field_paragraphs_base_image.entity.fileuri) }}" alt="image description" />
       </div>
       <div class="container">
         <div class="text-holder">
