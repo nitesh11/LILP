@@ -19,6 +19,10 @@ sites/*/files/
 node_modules
 bower_components
 
+# Ignore compiled CSS and JS.
+themes/custom/lilp/dist/css/*
+themes/custom/lilp/dist/js/*
+
 # Ignore SimpleTest multi-site environment.
 sites/simpletest
 

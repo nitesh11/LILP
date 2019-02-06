@@ -43,4 +43,4 @@ gulp.task('watch', function() {
   gulp.watch('./src/sass/**/*.scss', ['sass']);
 });
 
-gulp.task('default', ['concat', 'minify-js', 'sass', 'watch']);
+gulp.task('default', ['concat', 'minify-js', 'sass']);
