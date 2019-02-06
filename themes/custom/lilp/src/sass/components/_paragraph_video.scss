@@ -9,11 +9,52 @@
     }
   }
   .video-title {
-    color: #619700;
-    margin-bottom: 20px;
+    color: #98c93c;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .video-published-text {
+    font-size: 12px;
+    color: #b3b3b3;
+    font-weight: 400;
   }
   .video-description {
     margin-top: 25px;
     text-align: center;
+  }
+
+  .hundred-percent {
+    .video-description-wrapper  {
+      padding-top: 90px;
+      @media screen and (max-width: 768px) {
+        padding-top: 50px;
+      }
+      .video-description-text {
+        margin: 0 20%;
+        @media screen and (max-width: 768px) {
+          margin: 0 5%;
+        }
+        .title-bottom {
+          width: 25%;
+          padding-bottom: 24px;
+          float: left;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            float: none;
+            text-align: center;
+          }
+        }
+        .video-description {
+          width: 50%;
+          float: left;
+          margin-top: 0;
+          text-align: unset;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            float: none;
+          }
+        }
+      }
+    }
   }
 }

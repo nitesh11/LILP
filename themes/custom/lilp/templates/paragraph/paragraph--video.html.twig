@@ -85,13 +85,15 @@
                 {{ content.field_video }}
               </div>
               <div class="video-description-wrapper">
-                <div class="{{ content.field_title_placement.0 }} ">
-                  <span class="video-title"> {{ content.field_title }} </span>
-                  <span class="video-published-text">{{ content.field_published_text }} </span>
-                </div>
+                <div class="video-description-text">
+                  <div class="{{ content.field_title_placement.0 }} ">
+                    <span class="video-title"> {{ content.field_title }} </span>
+                    <span class="video-published-text">{{ content.field_published_text }} </span>
+                  </div>
 
-                <div class="video-description">
-                  {{ content.field_paragraphs_base_text|raw }}
+                  <div class="video-description">
+                    {{ content.field_paragraphs_base_text|raw }}
+                  </div>
                 </div>
               </div>
 
