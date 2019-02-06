@@ -8,6 +8,9 @@
       padding: 0;
     }
   }
+  .title-top {
+    padding-bottom: 24px;
+  }
   .video-title {
     color: #98c93c;
     font-weight: 700;
@@ -54,6 +57,22 @@
             float: none;
           }
         }
+      }
+    }
+  }
+  .seventy-five-percent {
+    margin: 0 10%;
+    @media screen and (max-width: 768px) {
+      margin: 0 5%;
+    }
+    .video-description {
+      width: 60%;
+      margin: 5% 0;
+      text-align: inherit;
+      margin-bottom: 40px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        text-align: inherit;
       }
     }
   }
