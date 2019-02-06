@@ -1,4 +1,4 @@
-uuid: 051156c4-ad2e-4595-9ff1-85908f88d1b6
+uuid: c941a5f5-6c16-4dd5-b48b-486afca9730d
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - block_content
   theme:
-    - bootstrap
-id: copyrighttext
-theme: bootstrap
+    - stark
+id: stark_copyrighttext
+theme: stark
 region: footer
 weight: -4
 provider: null
