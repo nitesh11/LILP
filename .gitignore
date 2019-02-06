@@ -18,6 +18,7 @@ sites/*/files/
 ## Ignore build libraries.
 node_modules
 bower_components
+package-lock.json
 
 # Ignore compiled CSS and JS.
 themes/custom/lilp/dist/css/*
