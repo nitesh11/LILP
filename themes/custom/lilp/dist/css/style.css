@@ -945,17 +945,17 @@ p {
   width: auto;
   height: auto; }
 
-.read-more {
+.read-more, .post-block .post a {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
   color: #f49206;
   font-size: 12px; }
-  .read-more:focus, .read-more:hover {
+  .read-more:focus, .post-block .post a:focus, .read-more:hover, .post-block .post a:hover {
     color: #98c93c; }
-  .read-more.green {
+  .read-more.green, .post-block .post a.green {
     color: #8fb721; }
-    .read-more.green:focus, .read-more.green:hover {
+    .read-more.green:focus, .post-block .post a.green:focus, .read-more.green:hover, .post-block .post a.green:hover {
       color: #f49206; }
 
 @media (min-width: 768px) {
@@ -1268,76 +1268,6 @@ p {
   @media (min-width: 768px) {
     .video-section + .video-section {
       padding-bottom: 70px; } }
-
-.post-block {
-  color: #48535b;
-  padding: 46px 0 10px;
-  line-height: 1.5; }
-  @media (min-width: 640px) {
-    .post-block {
-      padding-bottom: 21px; } }
-  .post-block h6 {
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    font-weight: 700; }
-    @media (min-width: 640px) {
-      .post-block h6 {
-        margin-bottom: 62px; } }
-  .post-block .post-holder {
-    display: flex;
-    flex-wrap: wrap; }
-  .post-block h3 {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 14px;
-    text-transform: capitalize; }
-    .post-block h3 span {
-      font-weight: 400;
-      font-style: italic; }
-  .post-block .post {
-    padding-bottom: 40px; }
-    @media (min-width: 640px) {
-      .post-block .post {
-        flex-basis: 0;
-        flex-grow: 1;
-        max-width: 100%;
-        min-width: 50%;
-        padding-right: 26px; } }
-    @media (min-width: 768px) {
-      .post-block .post {
-        padding-bottom: 50px;
-        min-width: 33.33%; } }
-  .post-block p {
-    margin-bottom: 18px; }
-  .post-block .text-content {
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 15px;
-    font-size: 12px;
-    line-height: 2; }
-    @media (min-width: 640px) {
-      .post-block .text-content {
-        margin-bottom: 21px; } }
-    .post-block .text-content:after {
-      width: 62px;
-      height: 1px;
-      background: #55595c;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      content: ''; }
-  .post-block .light-box {
-    visibility: hidden;
-    position: fixed;
-    left: -99999px;
-    display: inline-block;
-    vertical-align: top;
-    margin: 5px 0 33px; }
-  .post-block.lightbox-active .light-box {
-    visibility: visible;
-    position: static; }
-  .post-block.style01 {
-    background: #f4f4f4; }
 
 .bg-video {
   position: absolute;
@@ -2014,64 +1944,6 @@ address {
   .doc {
     line-height: 2; } }
 
-.banner {
-  display: flex;
-  align-items: flex-end;
-  color: #fff;
-  position: relative;
-  font-size: 24px;
-  line-height: 1.42;
-  padding: 80px 0; }
-  @media (min-width: 768px) {
-    .banner {
-      min-height: 516px;
-      padding: 25px 0 136px; } }
-  .banner:after {
-    content: '';
-    display: inline-block;
-    vertical-align: top;
-    font-size: 0;
-    line-height: 0;
-    min-height: inherit; }
-  .banner:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(72, 83, 91, 0.7);
-    z-index: 1; }
-  .banner h2,
-  .banner .h2,
-  .banner .paragraphs-base-text .paragraph-description.add-styling, .paragraphs-base-text
-  .banner .paragraph-description.add-styling {
-    text-align: center;
-    margin-bottom: 51px; }
-    @media (min-width: 768px) {
-      .banner h2,
-      .banner .h2,
-      .banner .paragraphs-base-text .paragraph-description.add-styling, .paragraphs-base-text
-      .banner .paragraph-description.add-styling {
-        margin-bottom: 70px; } }
-  @media (max-width: 767px) {
-    .banner h4,
-    .banner .h4 {
-      font-size: 14px; } }
-  .banner .text-holder {
-    max-width: 700px;
-    margin: 0 auto; }
-  .banner .container {
-    position: relative;
-    z-index: 2; }
-  .banner p {
-    margin-bottom: 15px; }
-    @media (min-width: 768px) {
-      .banner p {
-        margin-bottom: 25px; } }
-    .banner p:last-child {
-      margin-bottom: 0; }
-
 .bg-stretch {
   background-size: cover;
   background-position: 50%; }
@@ -2390,6 +2262,224 @@ address {
   @media (min-width: 768px) {
     .paragraphs-base-text .paragraph-description.add-styling {
       padding: 20px 0 20px 15px; } }
+
+.banner {
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  position: relative;
+  font-size: 24px;
+  line-height: 1.42;
+  padding: 80px 0; }
+  @media (min-width: 768px) {
+    .banner {
+      min-height: 516px;
+      padding: 25px 0 136px; } }
+  .banner:after {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+    min-height: inherit; }
+  .banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(72, 83, 91, 0.7);
+    z-index: 1; }
+  .banner h2,
+  .banner .h2,
+  .banner .paragraphs-base-text .paragraph-description.add-styling, .paragraphs-base-text
+  .banner .paragraph-description.add-styling {
+    text-align: center;
+    margin-bottom: 51px; }
+    @media (min-width: 768px) {
+      .banner h2,
+      .banner .h2,
+      .banner .paragraphs-base-text .paragraph-description.add-styling, .paragraphs-base-text
+      .banner .paragraph-description.add-styling {
+        margin-bottom: 70px; } }
+  @media (max-width: 767px) {
+    .banner h4,
+    .banner .h4 {
+      font-size: 14px; } }
+  .banner .text-holder {
+    max-width: 700px;
+    margin: 0 auto; }
+  .banner .container {
+    position: relative;
+    z-index: 2; }
+  .banner p {
+    margin-bottom: 15px; }
+    @media (min-width: 768px) {
+      .banner p {
+        margin-bottom: 25px; } }
+    .banner p:last-child {
+      margin-bottom: 0; }
+
+.paragraph--type--articles {
+  margin: 0 7%;
+  clear: left;
+  padding: 20px; }
+  .paragraph--type--articles h2 {
+    font-family: District Bold;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block; }
+    .paragraph--type--articles h2 a {
+      color: #48535B; }
+  .paragraph--type--articles .field--name-field-author {
+    font-family: District Book Italic;
+    font-size: 16px;
+    color: #48535B;
+    display: inline-block; }
+  .paragraph--type--articles .field--name-field-teaser-text {
+    font-family: District Book;
+    font-size: 12px;
+    color: #48535B; }
+  .paragraph--type--articles .field--name-field-link {
+    border-top: 1px solid #47545c;
+    display: inline-block;
+    margin-top: 15px;
+    padding-top: 20px; }
+    .paragraph--type--articles .field--name-field-link a {
+      color: #F49206;
+      text-transform: uppercase;
+      font-size: 12px; }
+
+.one-article .field--name-field-article > .field--item {
+  width: 75%;
+  display: inline-block;
+  padding: 20px; }
+  @media screen and (max-width: 768px) {
+    .one-article .field--name-field-article > .field--item {
+      width: 100%;
+      padding: 0; } }
+
+.two-articles .field--name-field-article > .field--item {
+  width: 48%;
+  display: inline-block;
+  padding: 20px; }
+  @media screen and (max-width: 768px) {
+    .two-articles .field--name-field-article > .field--item {
+      width: 100%;
+      padding: 0; } }
+
+.three-articles .field--name-field-article > .field--item {
+  width: 33%;
+  display: inline-block;
+  padding: 20px; }
+  @media screen and (max-width: 768px) {
+    .three-articles .field--name-field-article > .field--item {
+      width: 100%;
+      padding: 0; } }
+
+.post-block {
+  color: #48535b;
+  padding: 46px 0 10px;
+  line-height: 1.5;
+  background: #f4f4f4; }
+  @media (min-width: 640px) {
+    .post-block {
+      padding-bottom: 21px; } }
+  .post-block h6 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: 700; }
+    @media (min-width: 640px) {
+      .post-block h6 {
+        margin-bottom: 62px; } }
+  .post-block .post-holder {
+    display: flex;
+    flex-wrap: wrap; }
+  .post-block h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-transform: capitalize; }
+    .post-block h3 span {
+      font-weight: 400;
+      font-style: italic; }
+  .post-block .post {
+    padding-bottom: 40px; }
+    @media (min-width: 640px) {
+      .post-block .post {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        min-width: 50%;
+        padding-right: 26px; } }
+    @media (min-width: 768px) {
+      .post-block .post {
+        padding-bottom: 50px;
+        min-width: 33.33%; } }
+  .post-block p {
+    margin-bottom: 18px; }
+  .post-block .text-content {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 2; }
+    @media (min-width: 640px) {
+      .post-block .text-content {
+        margin-bottom: 21px; } }
+    .post-block .text-content:after {
+      width: 62px;
+      height: 1px;
+      background: #55595c;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: ''; }
+  .post-block .light-box {
+    visibility: hidden;
+    position: fixed;
+    left: -99999px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 0 33px; }
+  .post-block.lightbox-active .light-box {
+    visibility: visible;
+    position: static; }
+  .post-block.style01 {
+    background: #f4f4f4; }
+
+.paragraphs-base-text .paragraph-description.add-styling {
+  border-left: none;
+  padding: 15px 14px 20px;
+  border-bottom: 1px solid #ccc;
+  color: #98c93c;
+  line-height: 1.25;
+  font-weight: 300;
+  margin: 0; }
+  @media (max-width: 767px) {
+    .paragraphs-base-text .paragraph-description.add-styling {
+      font-size: 25px; } }
+  @media (min-width: 768px) {
+    .paragraphs-base-text .paragraph-description.add-styling {
+      padding: 20px 0 20px 15px; } }
+
+.paragraph--type--video .fifty-percent {
+  width: 50%;
+  padding: 20px; }
+  @media screen and (max-width: 768px) {
+    .paragraph--type--video .fifty-percent {
+      width: 100%;
+      float: none;
+      padding: 0; } }
+
+.paragraph--type--video .video-title {
+  color: #619700;
+  margin-bottom: 20px; }
+
+.paragraph--type--video .video-description {
+  margin-top: 25px;
+  text-align: center; }
 
 body {
   min-width: 320px; }

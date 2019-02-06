@@ -47,14 +47,14 @@
     'status'
   ]
 %}
-<div class="{{ paragraph.bundle|clean_class }}">
-  {% block paragraph %}
-    <div{{ attributes.addClass(classes) }}>
+<div class="{{ paragraph.bundle|clean_class }} post-block">
+  <div class="container">
+    {% block paragraph %}
       {% block content %}
-        <div class="{{ content.field_layout.0 }}">
+        <div class="{{ content.field_layout.0 }} post-holder">
           {{ content.field_article | raw }}
         </div>
       {% endblock %}
-    </div>
-  {% endblock paragraph %}
+    {% endblock paragraph %}
+  </div>
 </div>
