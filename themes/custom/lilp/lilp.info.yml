@@ -6,7 +6,6 @@ core: 8.x
 base theme: stark
 # Defines libraries group in which we can add css/js.
 libraries:
-  - lilp/bootstrap
   - lilp/global-styling
 
 # Regions

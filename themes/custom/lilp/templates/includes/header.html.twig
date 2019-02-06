@@ -1,0 +1,77 @@
+{# Navbar #}
+  {% if page.navigation or page.navigation_collapsible %}
+    {% block navbar %}
+      <header id="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+              <a href="#" class="nav-opener"><span></span> <span class="sr-only">opener</span></a>
+              <div class="header-holder row">
+                <div class="col-sm-7">
+                 <!-- page slogan -->
+                  <span class="slogan">Making Sense of Place <span>The Lives of Cities</span></span>
+                </div>
+                <div class="col-sm-5">
+                  <!-- page logo -->
+                  <div class="logo">
+                    <a href="#">
+                      <img src="{{ base_path ~ directory }}/images/logo.svg" height="36" width="36" alt="The Lincoln Institute Of Land Policy" class="hide-sm">
+                      <span>A Project of <br> The Lincoln Institute of Land Policy</span>
+                    </a>
+                  </div>
+                </div>
+              </div>            
+              <div class="drop-content">
+                <div class="drop-holder">
+                  <span class="language"><a href="#"><span>Español</span>Português</a></span>
+                  <!-- main navigation of the page -->
+                  <nav id="nav">
+                    <div class="columns">
+                      <span class="info-title">EXPLORE THE THEMES</span>
+                      <ul class="drop-menu">
+
+                        <!-- Render the Themes Menu. -->
+                        {% set items = simplify_menu('themes') %}
+                        {% for menu_item in items.menu_tree %}
+                          <li class="menu-item">
+                            <a href="{{ menu_item.url }}" class="menu-link">{{ menu_item.text }}</a>
+                          </li>
+                        {% endfor %}
+
+                      </ul>
+                    </div>
+                    <div class="columns">
+                      <span class="info-title">EXPLORE THE CITIES</span>
+                      <ul class="drop-menu">
+
+                        <!-- Render the City Menu. -->
+                        {% set items = simplify_menu('cities') %}
+                        {% for menu_item in items.menu_tree %}
+                          <li class="menu-item">
+                            <a href="{{ menu_item.url }}" class="menu-link">{{ menu_item.text }}</a>
+                          </li>
+                        {% endfor %}
+
+                      </ul>
+                    </div>
+                    <div class="columns">
+                      <span class="info-title"></span>
+                      <ul class="drop-menu style01">
+
+                        <!-- Render the City Menu. -->
+                        {% set items = simplify_menu('about') %}
+                        {% for menu_item in items.menu_tree %}
+                          <li class="menu-item">
+                            <a href="{{ menu_item.url }}" class="menu-link">{{ menu_item.text }}</a>
+                          </li>
+                        {% endfor %}
+
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+      </header>
+    {% endblock %}
+  {% endif %}

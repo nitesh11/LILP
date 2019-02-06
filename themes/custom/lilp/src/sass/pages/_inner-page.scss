@@ -87,7 +87,12 @@
 		}
 	}
 
-	.link {
+	.text-holder {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.link, h4 {
 		text-transform: uppercase;
 		color: $white;
 		font: 700 14px/1.2 $districtdemi-font;
