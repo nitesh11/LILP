@@ -3,8 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.article.body
+    - field.field.node.article.comment
     - field.field.node.article.field_author
+    - field.field.node.article.field_image
     - field.field.node.article.field_link
+    - field.field.node.article.field_tags
     - field.field.node.article.field_teaser_text
     - node.type.article
   module:
@@ -46,4 +50,9 @@ content:
     type: string
     region: content
 hidden:
+  body: true
+  comment: true
+  field_image: true
+  field_tags: true
+  langcode: true
   links: true

@@ -3,8 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.article.body
+    - field.field.node.article.comment
     - field.field.node.article.field_author
+    - field.field.node.article.field_image
     - field.field.node.article.field_link
+    - field.field.node.article.field_tags
     - field.field.node.article.field_teaser_text
     - node.type.article
   module:
@@ -47,6 +51,13 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 30
@@ -91,4 +102,8 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  body: true
+  comment: true
+  field_image: true
+  field_tags: true

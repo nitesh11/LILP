@@ -6,7 +6,14 @@ dependencies:
     - field.storage.node.field_media
     - node.type.homepage
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: node.homepage.field_media
 field_name: field_media
 entity_type: node
@@ -14,7 +21,7 @@ bundle: homepage
 label: Media
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

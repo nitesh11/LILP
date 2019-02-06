@@ -50,6 +50,13 @@ content:
     third_party_settings: {  }
     type: video_embed_field_textfield
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   promote:
     type: boolean_checkbox
     weight: 4

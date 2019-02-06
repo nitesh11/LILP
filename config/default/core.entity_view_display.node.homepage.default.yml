@@ -59,4 +59,5 @@ content:
     type: video_embed_field_video
     region: content
 hidden:
+  langcode: true
   links: true

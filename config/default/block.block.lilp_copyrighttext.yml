@@ -1,6 +1,6 @@
 uuid: 2baa40c1-422c-4df0-b0ed-6b59bfdd97cb
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:cf153025-98f3-400e-a69c-bf49f20742ca'
@@ -10,8 +10,8 @@ dependencies:
     - lilp
 id: lilp_copyrighttext
 theme: lilp
-region: footer
-weight: -4
+region: navigation
+weight: -5
 provider: null
 plugin: 'block_content:cf153025-98f3-400e-a69c-bf49f20742ca'
 settings:

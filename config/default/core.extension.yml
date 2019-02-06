@@ -26,10 +26,12 @@ module:
   help: 0
   history: 0
   image: 0
+  language: 0
   layout_discovery: 0
   libraries: 0
   link: 0
   link_attributes: 0
+  locale: 0
   media: 0
   menu_ui: 0
   node: 0
@@ -53,6 +55,7 @@ module:
   video_embed_wysiwyg: 0
   views_ui: 0
   menu_link_content: 1
+  content_translation: 10
   views: 10
   paragraphs: 11
   standard: 1000

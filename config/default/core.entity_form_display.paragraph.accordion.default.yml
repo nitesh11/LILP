@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.accordion.field_accordion_content
+    - field.field.paragraph.accordion.field_link
+    - field.field.paragraph.accordion.field_paragraphs_base_image
+    - field.field.paragraph.accordion.field_paragraphs_base_text
+    - field.field.paragraph.accordion.field_title
     - paragraphs.paragraphs_type.accordion
 id: paragraph.accordion.default
 targetEntityType: paragraph

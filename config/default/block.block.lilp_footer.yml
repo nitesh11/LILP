@@ -1,6 +1,6 @@
 uuid: b41f4750-c9a3-4dad-880f-560748759eb3
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -12,8 +12,8 @@ _core:
   default_config_hash: h06zhb3xV9_2_3Zy9NsyylL7YBaEDlMwMEqNwAn8kMo
 id: lilp_footer
 theme: lilp
-region: footer
-weight: -5
+region: navigation
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

@@ -1,0 +1,20 @@
+uuid: 3bcd8f0a-4c30-4445-a324-8072d2ad3e39
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.infographic
+id: paragraph.infographic.uid
+field_name: uid
+entity_type: paragraph
+bundle: infographic
+label: 'Authored by'
+description: 'The user ID of the paragraphs author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\paragraphs\Entity\Paragraph::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference
