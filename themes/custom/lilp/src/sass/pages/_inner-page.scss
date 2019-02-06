@@ -32,6 +32,12 @@
 		}
 	}
 
+	.bg-holder {
+		img {
+			opacity: 0;
+		}
+	}
+
 	&:after {
 		content: '';
 		display: inline-block;
