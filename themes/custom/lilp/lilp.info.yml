@@ -6,7 +6,9 @@ core: 8.x
 base theme: stark
 # Defines libraries group in which we can add css/js.
 libraries:
+  - lilp/bootstrap
   - lilp/global-styling
+
 # Regions
 regions:
   navigation: 'Navigation'
@@ -18,6 +20,8 @@ regions:
   sidebar_first: 'Primary'
   sidebar_second: 'Secondary'
   footer: 'Footer'
+  footer_left: 'Footer Left'
+  footer_right: 'Footer Right'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
   reusable_blocks: 'Reusable Blocks'

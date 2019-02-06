@@ -1,4 +1,13 @@
 global-styling:
   css:
     component:
-      css/style.css: {}
+      dist/css/style.css: {}
+  js:
+    dist/js/main.js: {}
+  dependencies:
+    - core/jquery
+
+bootstrap:
+  css:
+    component:
+      dist/css/bootstrap.css: {}

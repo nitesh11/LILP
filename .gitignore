@@ -15,6 +15,10 @@ sites/*/settings.local.php
 # Ignore Drupal's file directory
 sites/*/files/
 
+## Ignore build libraries.
+node_modules
+bower_components
+
 # Ignore SimpleTest multi-site environment.
 sites/simpletest
 

@@ -1,0 +1,57 @@
+$breakpoints: (
+  'xs-phone': 320px,
+  'phone': 640px,
+  'tablet': 768px,
+  'desktop': 992px,
+  'widescreen': 1200px,
+  'l-widescreen': 1366px
+);
+
+// keywords
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// ligatured operators ≥ ≤
+
+@import 'vendors/include-media';
+
+/* ---------------------------------------------------------
+   1. Embedded fonts styles
+   ---------------------------------------------------------*/
+@import 'vendors/fonts';
+@import 'vendors/icons';
+
+/* ---------------------------------------------------------
+   2. General reset
+   ---------------------------------------------------------*/
+@import "bootstrap-custom";
+
+@import "vendors/bootstrap/variables";
+@import "vendors/bootstrap/mixins";
+@import 'vendors/lightbox';
+
+@import 'base/functions';
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/cms-reset';
+
+/* ---------------------------------------------------------
+   3. Common site styles
+   ---------------------------------------------------------*/
+@import 'layouts/common';
+@import 'layouts/header';
+@import 'layouts/footer';
+
+@import 'pages/inner-page';
+@import 'pages/accordion';
+
+body {
+	min-width: $base-min-width;
+}

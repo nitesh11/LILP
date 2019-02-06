@@ -1,0 +1,18 @@
+.paragraphs-base-text {
+  .paragraph-description {
+    text-align: center;
+    margin: 3% 25%;
+    padding: 30px;
+    @media screen and (max-width: 768px) {
+      margin: 0;
+    }
+    &.add-styling {
+      color: #87b824;
+      border-bottom: 1px solid #b2b2b2;
+      font-size: 25px;
+    }
+    &.no-styling {
+
+    }
+  }
+}

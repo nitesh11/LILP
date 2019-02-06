@@ -1,0 +1,569 @@
+/* header styles */
+#header {
+	position: relative;
+	z-index: 9;
+	background-color: $white;
+	min-height: 48px;
+
+	@include media('>=tablet') {
+		min-height: 62px;
+	}
+
+	.nav-active &{
+		
+	}
+
+
+	.header-content {
+		display: flex;
+		max-width: 1272px;
+		margin: 0 auto;
+		position: relative;
+
+		@include media('>=tablet') {
+			width: 720px;
+		}
+
+		@include media('>=desktop') {
+			width: 940px;
+		}
+
+		@include media('>=widescreen') {
+			width: 1078px;
+		}
+
+		@include media('>=l-widescreen') {
+			width: 1272px;
+		}
+
+		.nav-active &{
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+
+			&:after {
+				opacity: 1;
+			}
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -9999px;
+			right: -9999px;
+			bottom: 0;
+			background-color: $concrete;
+			z-index: -1;
+			opacity: 0;
+			transition: 0.25s linear opacity;
+		}
+	}
+
+
+	.container {
+		@include media('<tablet') {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		@include media('>=l-widescreen') {
+			width: 1300px;
+		}
+	}
+
+	.col-sm-7 {
+		@include media('>=phone', "<tablet") {
+			width: 56%;
+		}
+	}
+
+	.col-sm-5 {
+		@include media('>=phone', "<tablet") {
+			width:  44%;
+		}
+	}
+
+	.intro-page & {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.8s, visibility 0.8s;
+	}
+
+	.anim-completed & {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.header-holder {
+	font-size: 10px;
+	line-height: 1;
+	align-self: center;
+	padding: 6px 13px;
+	width: calc(100% - 49px);
+
+	@include media('>=phone') {
+		display: flex;
+		align-items: center;
+		font-size: 11px;
+		line-height: 1.31;
+	}
+
+	@include media('>=tablet') {
+		width: calc(100% - 64px);
+	}
+
+	@include media('>=desktop') {
+		padding-left: 19px;
+		padding-right: 12px;
+		font-size: 13px;
+	}
+}
+
+/* page slogan styles */
+.slogan {
+	font: 10px/1 $districtdemi-font;
+	display: block;
+	color: $river-bed-approx;
+	margin-bottom: 5px;
+
+	@include media('>=phone') {
+		font-size: 12px;
+		font-weight: 400;
+	}
+
+	@include media('>=tablet') {
+		font-size: 15px;
+	}
+
+	span {
+		display: inline-block;
+		vertical-align: top;
+		color: #88b723;
+		margin-left: 4px;
+
+		@include media('>=325px') {
+			margin-left: 16px;
+		}
+		@include media('>=phone') {
+			margin-left: 0;
+		}
+	}
+}
+
+
+/* page logo styles */
+.logo {
+	color: $river-bed-approx;
+	text-decoration: none;
+	@include media('>=phone') {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+
+	a {
+		color: $river-bed-approx;
+		text-decoration: none;
+
+		@include media('>=phone') {
+			// flex: 1;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			
+		}
+
+		&:focus {
+			outline: 5px auto -webkit-focus-ring-color;
+			outline-offset: -2px
+		}
+	}
+
+
+	img {	
+		@include media('>=phone') {
+			flex-basis: 32px;
+			max-width: 32px;
+		}
+	}
+
+	br {
+		@include media('<phone') {
+			display: none;
+		}
+	}
+
+	span {
+		@include media('>=phone') {
+			padding-left: 13px;
+			text-align: left;
+			display: block;
+			padding-top: 5px;
+		}
+
+		@include media('>=desktop') {
+			padding-left: 19px;
+			letter-spacing: -0.3px;
+		}
+	}
+}
+
+/* burger menu style */
+.nav-opener {
+	display: block;
+	position: relative;
+	text-decoration: none;
+	line-height: 1;
+	width: 49px;
+	height: 48px;
+	background-color: $river-bed-approx;
+
+	@include media('>=tablet') {
+		width: 64px;
+		height: 62px;
+	}
+
+  span {
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 12px;;
+    right: 0;
+    height: 2px;
+    background: $white;
+    transition-duration: 0s;
+    transition-delay: 0s;
+    width: 25px;
+
+    @include media(">=tablet") {
+      top: 29px;
+      width: 30px;
+      left: auto;
+      left: 16px;
+    }
+
+    .nav-active & {
+      background: none !important;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: $white;
+      transition-duration: 0.3s, 0.4s;
+      transition-delay: 0s, 0.3s;
+
+      .nav-active & {
+        transition-delay: 0.3s, 0s;
+      }
+    }
+
+    &:after {
+      bottom: -8px;
+      transition-property: transform, bottom;
+
+      @include media(">=tablet") {
+        bottom: -10px;
+      }
+
+      .nav-active & {
+        bottom: 0;
+        transform: rotate(-45deg);
+      }
+    }
+
+    &:before {
+      top: -8px;
+      transition-property: transform, top;
+
+      @include media(">=tablet") {
+        top: -10px;
+      }
+
+      .nav-active & {
+        top: 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+
+.language {
+	color: $california;
+	display: block;
+	font:  14px/1 $districtdemi-font;
+	text-align: right;
+	margin-bottom: 15px;
+
+	@include media('>=tablet') {
+		margin-bottom: 84px;
+		font-size: 17px;
+	}
+
+	a {
+		color: $california;
+		text-decoration: none;
+		
+		&:focus,
+		&:hover {
+			color: $atlantis;
+		}
+	}
+
+	span {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 8px;
+
+		@include media('>=tablet') {
+			margin-right: 15px;
+		}
+	}
+}
+
+.info-title {
+	color: $california-approx;
+	display: block;
+	text-transform: uppercase;;
+	font:  15px/1 $districtdemi-font;
+	margin-bottom: 8px;
+
+	@include media('>=phone') {
+		min-height: 35px;
+	}
+
+	@include media('>=desktop') {
+		font-size: 17px;
+		min-height: 50px;
+		margin-bottom: 17px;
+	}
+}
+
+.nav-active {
+	overflow: hidden;
+}
+
+
+.drop-content {
+	position: fixed;
+	top: 48px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	opacity: 0;
+	visibility: hidden;
+	@include animate(opacity visibility)
+
+	@include media('>=tablet') {
+		top: 62px;
+		width: 748px;
+		margin: 0 auto;
+	}
+
+	@include media('>=desktop') {
+		width: 968px;
+	}
+
+	@include media('>=widescreen') {
+		width: 1110px;
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+
+	@include media('>=l-widescreen') {
+		width: 1300px;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		right: -9999px;
+		left: -9999px;
+		bottom: 0;
+		top: 0;
+		background-color: $concrete;
+		z-index: -1;
+	}
+
+	.drop-holder {
+		padding-left: 15px;
+		padding-right: 15px;
+		height: 100%;
+		overflow: auto;
+
+		@include media('>=widescreen') {
+			padding-right: 148px;
+			padding-left: 110px;
+		}
+	}
+
+	.nav-active & {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+
+/* navigation menu style */
+#nav {
+	@include media('>=phone') {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.columns {
+		@include media('>=phone') {
+			width: 33.33%;
+			padding-right: 15px;
+		}
+
+		@include media('>=tablet') {
+			width: 37.33%;
+		}
+
+		@include media('>=desktop') {
+			width: 43.73%;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+
+		&:nth-child(2) {
+
+			@include media('>=tablet') {
+				width: 32.67%;
+			}
+
+			@include media('>=desktop') {
+				width: 35.33%;
+			}
+		}
+
+		&:nth-child(3) {
+
+			@include media('>=tablet') {
+				width: 30%;
+			}
+
+			@include media('>=desktop') {
+				width: 20.94%;
+			}
+		}
+	}
+
+	.drop-menu {
+		@extend %listreset;
+		margin-bottom: 24px;
+
+		>li {
+			font-size: 18px;
+			line-height: 1;
+
+			@include media('>=tablet') {
+				font-size: 25px;
+			}
+
+			@include media('>=desktop') {
+				font-size: 30px;
+			}
+
+			+ li {
+				margin-top: 12px;
+
+				@include media('>=phone') {
+					margin-top: 18px;
+				}
+
+				@include media('>=desktop') {
+					margin-top: 30px;
+				}
+			}
+
+			&.active >a {
+				color: $atlantis;
+			}
+
+			a {
+				color: $river-bed-approx;
+				text-decoration: none;
+				font-weight: 300;
+
+				&:focus,
+				&:hover {
+					color: $atlantis;
+				}
+			}
+
+			ul {
+				@extend %listreset;
+				padding: 16px 15px 4px;
+
+				@include media('>=desktop') {
+					padding: 13px 40px 0;
+				}
+				
+
+				li {
+					font-size: 16px;
+
+					@include media('>=tablet') {
+						font-size: 18px;
+					}
+
+					@include media('>=desktop') {
+						font-size: 20px;
+					}
+
+					+ li {
+						margin-top: 10px;
+
+						@include media('>=desktop') {
+							margin-top: 13px;
+						}
+					}
+				}
+			}
+		}
+
+		&.style01 {
+
+			@include media('>=desktop') {
+				padding-top: 4px;
+			}
+
+			li {
+				@include media('>=tablet') {
+					font-size: 24px;
+				}
+
+				+ li {
+
+					@include media('>=desktop') {
+						margin-top: 36px;
+					}
+				}
+			}
+		}
+	}
+}
