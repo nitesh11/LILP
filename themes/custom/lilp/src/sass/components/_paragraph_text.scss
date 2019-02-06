@@ -18,24 +18,25 @@
       padding: 20px 0 20px 15px;
     }
 
-    // &:before {
-    //   content: '“';
-    //   position: absolute;
-    //   top: 15px;
-    //   width: 15px;
-    //   left: 14px;
+    p {
+      &:before {
+          content: '“';
+          position: absolute;
+          top: 64px;
+          width: 15px;
+          left: 14px;
 
-    //   @include media('>=tablet') {
-    //     top: 87px;
-    //     left: 12px;
-    //   }
-    // }
-
-    // &:after {
-    //   content: '“';
-    //   display: inline;
-    //   width: 15px;
-    //   margin-right: 10px;
-    // }
+          @include media('>=tablet') {
+            top: 105px;
+            left: 12px;
+          }
+        }
+        &:after {
+          content: '“';
+          display: inline;
+          width: 15px;
+          margin-right: 10px;
+        }
+    }
   }
 }
