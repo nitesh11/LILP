@@ -1,4 +1,4 @@
-uuid: d6440a57-46c4-484b-900f-b5fa37f75d16
+uuid: 5c90f903-bae9-416e-ad51-4b0ebb528106
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap
-id: connectwithus
-theme: bootstrap
+    - stark
+id: stark_connectwithus
+theme: stark
 region: footer
 weight: -6
 provider: null

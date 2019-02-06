@@ -21,5 +21,9 @@ content:
     region: content
 hidden:
   created: true
+  field_link: true
+  field_paragraphs_base_image: true
+  field_paragraphs_base_text: true
+  field_title: true
   status: true
   uid: true

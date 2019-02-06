@@ -19,4 +19,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
-hidden: {  }
+hidden:
+  field_link: true
+  field_paragraphs_base_image: true
+  field_paragraphs_base_text: true
+  field_title: true

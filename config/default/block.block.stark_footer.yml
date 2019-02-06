@@ -1,4 +1,4 @@
-uuid: addbf504-7de8-49e3-8bd6-5c0bc77979eb
+uuid: f093bae7-f5fc-4639-b567-a693d659d7a0
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - stark
 _core:
   default_config_hash: h06zhb3xV9_2_3Zy9NsyylL7YBaEDlMwMEqNwAn8kMo
-id: bootstrap_footer
-theme: bootstrap
+id: stark_footer
+theme: stark
 region: footer
 weight: -5
 provider: null

@@ -1,16 +1,16 @@
-uuid: 97c4f04d-a62f-4af8-9047-b5be77c949cc
+uuid: 10a44da8-5179-4275-a8a0-eb42e79592c7
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - stark
 _core:
   default_config_hash: Cy3vkpYrD1O5JG-BeEnokF0bByHYDEa8CBfWivB4_SQ
-id: bootstrap_branding
-theme: bootstrap
-region: navigation
+id: stark_branding
+theme: stark
+region: sidebar_first
 weight: 0
 provider: null
 plugin: system_branding_block

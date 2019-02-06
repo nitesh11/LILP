@@ -1,4 +1,4 @@
-uuid: 5f74eaa2-2fd6-4e03-9c8b-5cf8fd790b97
+uuid: 26069451-0b2e-4774-9ef0-858cd62b28d0
 langcode: en
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - stark
 _core:
   default_config_hash: GT_zYl7I9VAILH8OxMRe-VDvFadCDHxRcnmBc5xEmf0
-id: bootstrap_main_menu
-theme: bootstrap
-region: navigation_collapsible
+id: stark_main_menu
+theme: stark
+region: sidebar_first
 weight: 10
 provider: null
 plugin: 'system_menu_block:main'

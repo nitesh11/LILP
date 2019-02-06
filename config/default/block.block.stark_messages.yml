@@ -1,15 +1,15 @@
-uuid: 2e8d7a8e-050b-48f8-be34-b18b3a6537f2
+uuid: 91f1a977-9f03-4e03-aea3-b5dd35a29739
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - stark
 _core:
   default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
-id: bootstrap_messages
-theme: bootstrap
+id: stark_messages
+theme: stark
 region: header
 weight: -50
 provider: null
