@@ -1,5 +1,4 @@
 .video {
-  clear: both;
   margin-top: 90px;
   margin-bottom: 90px;
 
@@ -106,6 +105,7 @@
 }
 
 .video-gallery {
+  padding-top: 90px;
   .video-block {
     clear: both;
     > div {
@@ -131,11 +131,20 @@
   }
   .video-description {
     clear: both;
-    padding: 87px 0 90px;
-    margin: 15%;
+    padding: 80px 0 90px;
+    margin-left: 15%;
+    margin-right: 15%;
     @media screen and (max-width: 768px) {
       padding: 60px 0;
       margin: 0%;
     }
   }
+
+  .video-wrapper {
+    .video {
+      @include make-sm-column(6);
+      margin: 0;
+    }
+  }
+
 }

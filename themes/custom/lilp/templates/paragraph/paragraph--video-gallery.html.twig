@@ -50,14 +50,16 @@
 <div class="{{ paragraph.bundle|clean_class }}">
   <div class="container">
     {% block paragraph %}
-      {% block content %}        
-        <div class="video-block">
+      {% block content %}
+
+        <div class="row video-wrapper">
           {{ content.field_videos }}
         </div>
 
         <div class="video-description">
           {{ content.field_paragraphs_base_text }}
         </div>
+
       {% endblock %}
     {% endblock paragraph %}
   </div>
