@@ -8,14 +8,14 @@
               <div class="header-holder row">
                 <div class="col-sm-7">
                  <!-- page slogan -->
-                  <span class="slogan">Making Sense of Place <span>The Lives of Cities</span></span>
+                  <span class="slogan"> {{ 'Making Sense of Place'|t }} <span>{{ 'The Lives of cities'|t }}</span></span>
                 </div>
                 <div class="col-sm-5">
                   <!-- page logo -->
                   <div class="logo">
                     <a href="#">
                       <img src="{{ base_path ~ directory }}/images/logo.svg" height="36" width="36" alt="The Lincoln Institute Of Land Policy" class="hide-sm">
-                      <span>A Project of <br> The Lincoln Institute of Land Policy</span>
+                      <span>{{ 'A Project of'|t }} <br> {{ 'The Lincoln Institute of Land Policy'|t }}</span>
                     </a>
                   </div>
                 </div>
@@ -26,7 +26,7 @@
                   <!-- main navigation of the page -->
                   <nav id="nav">
                     <div class="columns">
-                      <span class="info-title">EXPLORE THE THEMES</span>
+                      <span class="info-title"> {{ 'Explore the Themes'|t }} </span>
                       <ul class="drop-menu">
 
                         <!-- Render the Themes Menu. -->
@@ -40,7 +40,7 @@
                       </ul>
                     </div>
                     <div class="columns">
-                      <span class="info-title">EXPLORE THE CITIES</span>
+                      <span class="info-title">{{ 'Explore the Cities'|t }}</span>
                       <ul class="drop-menu">
 
                         <!-- Render the City Menu. -->
