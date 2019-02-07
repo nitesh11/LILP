@@ -23,7 +23,7 @@ function initCustom() {
 			chapterComponent = jQuery('#sidebar');
 
 	firstImageComponent.addClass('two-column');
-	chapterComponent.clone().prependTo(imageContainer);
+	chapterComponent.prependTo(imageContainer);
 
 }
 

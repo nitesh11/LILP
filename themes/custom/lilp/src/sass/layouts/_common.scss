@@ -172,6 +172,8 @@ p {
     margin-bottom: 10px;
     font-family: $districtdemi-font;
     min-height: 26px;
+    font-size: 16px;
+
 
     span {
       @include animate(opacity visibility, 0.5s);
@@ -219,7 +221,7 @@ p {
   padding: 50px 0;
 
   @include media ('>=tablet') {
-    padding: 87px 0 90px;
+    padding: 40px 0 80px;
   }
 
   .medium-video {

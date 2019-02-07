@@ -44,41 +44,32 @@
   ]
 %}
 
-<ul class="quick-link-wrapper">
+<ul class="quick-link-wrapper link-list anchor-nav">
   {% if label_hidden %}
     {% if multiple %}
         {% for item in items %}
           <li class="quick-link-element">
-            <a href="#{{ item.content|render|striptags|trim|clean_class }}" class="quick-link">
-              {{ item.content }}
+            <a href="#{{ item.content|render|striptags|trim|clean_class }}" class="smoth-scroll quick-link">
+              <span>{{ item.content }}</span>
             </a>
           </li>
         {% endfor %}
     {% else %}
       {% for item in items %}
         <li class="quick-link-element">
-          <a href="#{{ item.content|render|striptags|trim|clean_class }}" class="quick-link">
-            {{ item.content }}
+          <a href="#{{ item.content|render|striptags|trim|clean_class }}" class="smoth-scroll quick-link">
+            <span>{{ item.content }}</span>
           </a>
         </li>
       {% endfor %}
     {% endif %}
   {% else %}
-    <div{{ attributes }}>
-      <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
-      {% if multiple %}
-        <div>
-      {% endif %}
-      {% for item in items %}
-        <li class="quick-link-element">
-          <a href="#{{ item.content|render|striptags|trim|clean_class }}" class="quick-link">
-            {{ item.content }}
-          </a>
-        </li>
-      {% endfor %}
-      {% if multiple %}
-        </div>
-      {% endif %}
-    </div>
+    {% for item in items %}
+      <li class="quick-link-element">
+        <a href="#{{ item.content|render|striptags|trim|clean_class }}" class="smoth-scroll quick-link">
+          <span>{{ item.content }}</span>
+        </a>
+      </li>
+    {% endfor %}
   {% endif %}
 </ul>

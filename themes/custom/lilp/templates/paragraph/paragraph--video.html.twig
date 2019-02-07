@@ -48,11 +48,11 @@
   ]
 %}
 
-<div class="{{ paragraph.bundle|clean_class }}">
+<div class="{{ paragraph.bundle|clean_class }} clearfix">
   {% block paragraph %}
     <div{{ attributes.addClass(classes) }}>
       {% block content %}
-        <div class="{{ content.field_video_layout.0 }} {{ content.field_description_placement|render|striptags|trim }}">
+        <div class="clearfix {{ content.field_video_layout.0 }} {{ content.field_description_placement|render|striptags|trim }}">
 
           {% spaceless %}
             {% if content.field_description_placement|render|striptags|trim == 'description-align-left' %}

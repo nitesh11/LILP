@@ -38,35 +38,25 @@
  * @ingroup themeable
  */
 #}
-{%
-  set classes = [
-    'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished',
-    'status'
-  ]
-%}
-<div class="banner {{ paragraph.bundle|clean_class }}" id="{{content.field_title|render|striptags|trim|clean_class }}">
 
+<aside id="sidebar" class="slide">
+  <h2 class="h6">CHAPTERS</h2>
+  
+  {%
+    set classes = [
+      'paragraph',
+      'paragraph--type--' ~ paragraph.bundle|clean_class,
+      view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+      not paragraph.isPublished() ? 'paragraph--unpublished'
+    ]
+  %}
   {% block paragraph %}
-    {% block content %}
-      <div class="bg-holder">
-        <img src="{{ file_url(paragraph.field_paragraphs_base_image.entity.fileuri) }}" alt="image description">
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
-            <div class="text-wrapper">
-              <h2>{{ content.field_title }}</h2>
-              <h4>
-                {{ content.field_paragraphs_base_text | raw }}
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    {% endblock %}
+    <div{{ attributes.addClass(classes) }}>
+      {% block content %}
+        {{ content }}
+      {% endblock %}
+    </div>
   {% endblock paragraph %}
- </div>
+
+  <a class="open close" href="#"><img src="/{{ base_path ~ directory }}/images/close.svg" width="11" height="11" alt="image description"></a>
+</aside>

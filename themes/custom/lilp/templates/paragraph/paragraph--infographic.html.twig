@@ -51,15 +51,29 @@
   {% block paragraph %}
     <div{{ attributes.addClass(classes) }}>
       {% block content %}
-        <div class="infographics-image">
-          {{ content.field_paragraphs_base_image }}
-        </div>
-        <h2 class="infographics-title">
-          {{ content.field_title }}
-        </h2>
-        <div class="infographics-description">
-          {{ content.field_paragraphs_base_text }}
-        </div>
+        {% if content.field_infographics_layout.0|render|striptags|trim == 'fifty-percent' %}
+
+          <div class="graph-holder">
+            <span class="title">{{ content.field_title }}</span>
+            {{ content.field_paragraphs_base_image }}
+          </div>
+
+        {% else %}
+
+          <div class="infographics-image">
+            {{ content.field_paragraphs_base_image }}
+          </div>
+          {% if content.field_infographics_layout.0|render|striptags|trim != 'fifty-percent' %}
+            <h2 class="infographics-title">
+              {{ content.field_title }}
+            </h2>
+          {% endif %}
+          <div class="infographics-description">
+            {{ content.field_paragraphs_base_text }}
+          </div>
+
+        {% endif %}
+        
       {% endblock %}
     </div>
   {% endblock paragraph %}

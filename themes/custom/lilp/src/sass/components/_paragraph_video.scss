@@ -1,13 +1,17 @@
 .video {
   clear: both;
+  margin-top: 90px;
+  margin-bottom: 90px;
+
   .paragraph--type--video {
     .fifty-percent {
       &.description-align-left {
-        margin: 10%;
-        margin-top: 5%;
-        margin-bottom: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        // margin-bottom: 40px;
         @media screen and (max-width: 768px) {
-          margin: 5%;
+          margin-left: 5%;
+          margin-right: 5%;
         }
         .video-description {
           width: 30%;
