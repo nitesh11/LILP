@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+	initCustom();
 	initRetinaCover();
 	initMobileNav();
 	initShowMore();
@@ -14,6 +15,17 @@ jQuery(window).on('load', function() {
 	initOpenCloseBlock();
 	initIntroAnim();
 })
+
+function initCustom() {
+
+	var firstImageComponent = jQuery('#block-lilp-content .paragraphs-base-image:first'),
+			imageContainer = firstImageComponent.find('.container'),
+			chapterComponent = jQuery('#sidebar');
+
+	firstImageComponent.addClass('two-column');
+	chapterComponent.clone().prependTo(imageContainer);
+
+}
 
 // init intro animation
 function initIntroAnim() {
@@ -153,8 +165,15 @@ function initShowMore() {
 			var $template = jQuery(template);
 			var templatePostsHolder = $template.find('.post-holder');
 			container.addClass(activeClass);
-			for (var i = 3; i < items.length; i++) {
-				templatePostsHolder.append(items.eq(i))
+			for (var i = 0; i < items.length; i++) {
+				if (i < 3) {
+					item = items.eq(i).clone();
+				}
+				else {
+					item = items.eq(i);
+				}
+				
+				templatePostsHolder.append(item);
 			}
 			$body.append($template);
 		} else {
