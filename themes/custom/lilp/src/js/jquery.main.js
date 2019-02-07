@@ -22,8 +22,13 @@ function initCustom() {
 			imageContainer = firstImageComponent.find('.container'),
 			chapterComponent = jQuery('#sidebar');
 
-	firstImageComponent.addClass('two-column');
+	firstImageComponent.addClass('two-column js-open-close');
 	chapterComponent.prependTo(imageContainer);
+
+	var mobileAnchorNav = jQuery('.mobile-anchor-nav'),
+			activeAnchorNavItem = jQuery('.quick-link-element:first span').text();
+
+	mobileAnchorNav.find('a').text(activeAnchorNavItem);
 
 }
 

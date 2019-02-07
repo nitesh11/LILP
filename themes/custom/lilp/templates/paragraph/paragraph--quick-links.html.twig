@@ -51,11 +51,9 @@
     ]
   %}
   {% block paragraph %}
-    <div{{ attributes.addClass(classes) }}>
-      {% block content %}
-        {{ content }}
-      {% endblock %}
-    </div>
+    {% block content %}
+      {{ content }}
+    {% endblock %}
   {% endblock paragraph %}
 
   <a class="open close" href="#"><img src="/{{ base_path ~ directory }}/images/close.svg" width="11" height="11" alt="image description"></a>

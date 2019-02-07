@@ -92,22 +92,50 @@
 }
 
 // two columns style
-.two-column {
+.banner.two-column {
+  display: block;
+  padding-top: 0;
+
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  z-index: 2;
+  color: $white;
+  padding-bottom: 67px;
+  min-height: 480px;
+
+  @include media('>=tablet') {
+    min-height: 562px;
+    padding: 0;
+  }
 
   .container {
+    position: initial;
 
     @include media('>=tablet') {
+      position: relative;
       display: flex;
+    }
+
+    .row {
+      position: relative;
+      z-index: 9;
     }
   }
 
   .text-wrapper {
     padding-top: 150px;
+
+    @media (max-width: 767px) {
+      padding-top: 40px;
+    }
   }
   
   /* sidebar styles */
   #sidebar {
     display: block;
+    z-index: 15;
+
     @include media('>=tablet') {
       max-width: 265px;
       flex: 0 0 265px;
@@ -121,19 +149,6 @@
 
   &:before {
     background: rgba($black, 0.5);
-  }
-
-  background-size: cover;
-  background-position: 50% 50%;
-  position: relative;
-  z-index: 2;
-  color: $white;
-  padding-bottom: 67px;
-  min-height: 480px;
-
-  @include media('>=tablet') {
-    min-height: 562px;
-    padding: 0;
   }
 
   &:after {
@@ -179,6 +194,8 @@
     padding: 10px 15px;
     margin-bottom: 64px;
     display: block;
+    position: relative;
+    z-index: 10;
 
     @include media ('>=tablet') {
       display: none;

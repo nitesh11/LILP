@@ -2,6 +2,11 @@
   margin-top: 90px;
   margin-bottom: 90px;
 
+  @include media('<=phone') {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   .paragraph--type--video {
     .fifty-percent {
       &.description-align-left {
