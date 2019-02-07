@@ -21,14 +21,16 @@
     p {
       &:before {
           content: '“';
-          position: absolute;
-          top: 64px;
+          position: relative;
+          top: inherit;
           width: 15px;
-          left: 14px;
+          left: inherit;
+          text-indent: -5px;
+          display: inline-block;
 
           @include media('>=tablet') {
-            top: 105px;
-            left: 12px;
+            top: inherit;
+            left: inherit;
           }
         }
         &:after {
