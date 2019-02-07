@@ -13,6 +13,7 @@ dependencies:
     - paragraphs.paragraphs_type.paragraphs_base_text
     - paragraphs.paragraphs_type.quick_links
     - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.video_gallery
   module:
     - entity_reference_revisions
 id: node.page.field_content
@@ -32,6 +33,7 @@ settings:
     target_bundles:
       accordion: accordion
       articles: articles
+      video_gallery: video_gallery
       data_display: data_display
       paragraphs_base_image: paragraphs_base_image
       hero_banner: hero_banner
@@ -45,6 +47,9 @@ settings:
       articles:
         enabled: true
         weight: 10
+      video_gallery:
+        enabled: true
+        weight: 12
       data_display:
         enabled: true
         weight: 12

@@ -1,0 +1,61 @@
+uuid: c1317e2e-4519-4dab-951c-e0deeb830ff9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_videos
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.video_gallery
+  module:
+    - entity_reference_revisions
+id: paragraph.video_gallery.field_videos
+field_name: field_videos
+entity_type: paragraph
+bundle: video_gallery
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      video: video
+    target_bundles_drag_drop:
+      video_gallery:
+        weight: 12
+        enabled: false
+      accordion:
+        weight: 13
+        enabled: false
+      articles:
+        weight: 14
+        enabled: false
+      blocks:
+        weight: 15
+        enabled: false
+      data_display:
+        weight: 16
+        enabled: false
+      hero_banner:
+        weight: 17
+        enabled: false
+      infographic:
+        weight: 18
+        enabled: false
+      paragraphs_base_image:
+        weight: 19
+        enabled: false
+      paragraphs_base_text:
+        weight: 20
+        enabled: false
+      quick_links:
+        weight: 21
+        enabled: false
+      video:
+        enabled: true
+        weight: 22
+field_type: entity_reference_revisions

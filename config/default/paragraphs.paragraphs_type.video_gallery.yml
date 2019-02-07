@@ -1,0 +1,9 @@
+uuid: cd27bc88-662e-4baf-9a15-7438b294e42e
+langcode: es
+status: true
+dependencies: {  }
+id: video_gallery
+label: 'Video Gallery'
+icon_uuid: null
+description: 'Paragraph type for Video Gallery.'
+behavior_plugins: {  }
