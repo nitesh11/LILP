@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
 	initCustom();
-	initRetinaCover();
 	initMobileNav();
 	initShowMore();
 	initAnchors();
@@ -8,7 +7,8 @@ jQuery(document).ready(function($) {
 	initOpenClose();
 	initStickyScrollBlock();
 	initFancybox();
-	initIntroAnim();
+	initOpenCloseBlock();
+	initRetinaCover();
 });
 
 jQuery(window).on('load', function() {
@@ -35,8 +35,8 @@ function initCustom() {
 // init intro animation
 function initIntroAnim() {
 	var animCompletedClass = 'anim-completed';
-	var resetClass = 'reset-class';
-	var animDelay = 3000;
+	var resetClass = 'anim-reset';
+	var animDelay = 4000;
 
 	jQuery('.intro-page').each(function() {
 		var page = jQuery(this);
@@ -188,6 +188,7 @@ function initShowMore() {
 }
 
 function initOpenCloseBlock() {
+	var loader = document.querySelector('html');
 	var activeClass = 'active';
 	var page = jQuery('html, body');
 	var animSpeed = 500;
@@ -197,6 +198,14 @@ function initOpenCloseBlock() {
 		var holder = jQuery(this);
 		var slides = holder.find('.slide');
 		var activeItem = slides.eq(0);
+		var activeVideo = activeItem.find('video');
+
+		if (activeVideo[0].paused) {
+			activeVideo[0].play();
+		}
+		activeVideo.on('play', function() {
+			initIntroAnim();
+		});
 
 		slides.each(function() {
 			var item = jQuery(this);

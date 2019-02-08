@@ -89,18 +89,26 @@
 	}
 
 	.intro-page & {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
 		opacity: 0;
-		visibility: hidden;
-		transition: opacity 0.8s, visibility 0.8s;
+		min-height: 0;
+		max-height: 0;
+		transition: opacity 1s,  max-height 1s;
+		overflow: hidden;
 	}
 
 	.anim-completed & {
 		opacity: 1;
-		visibility: visible;
+		max-height: 80px;
+	}
+
+	.anim-reset & {
+		overflow: visible;
+		max-height: none;
+		min-height: 48px;
+
+		@include media('>=tablet') {
+			min-height: 62px;
+		}
 	}
 }
 

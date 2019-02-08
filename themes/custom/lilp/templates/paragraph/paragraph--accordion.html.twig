@@ -47,8 +47,18 @@
     'status'
   ]
 %}
-<div class="{{ paragraph.bundle|clean_class }}">
-  <ul>  
-    {{ content|raw }}
-  </ul>
+
+<div class="intro-content">
+  <div class="full-video">
+    <div class="container">
+      <strong class="title">{{ 'Making Sense of Place'|t }}</strong>
+       <h1>{{ 'The Lives of cities'|t }}</h1>
+       <span class="text">{{ 'A Project of'|t }} {{ 'The Lincoln Institute of Land Policy'|t }}</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="open-close-block">
+  {{ content|raw }}
 </div>

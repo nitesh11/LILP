@@ -6,7 +6,7 @@
 	font: 10px/1.5 $beausite-font;
 	color: $white;
 	position: relative;
-	z-index: 1;
+	z-index: 9999;
 
 	@include media('>=phone') {
 		font-size: 12px;

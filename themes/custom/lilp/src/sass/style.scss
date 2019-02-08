@@ -50,7 +50,9 @@ $media-expressions: (
 @import 'layouts/common';
 @import 'layouts/header';
 @import 'layouts/footer';
+
 @import 'pages/inner-page';
+@import 'pages/accordion';
 
 /* ---------------------------------------------------------
    COMPONENTS

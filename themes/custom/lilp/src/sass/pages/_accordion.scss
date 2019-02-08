@@ -6,18 +6,8 @@
 	background: rgba($atlantis, 0.8);
 	margin: 0 -4px;
 
-	.intro-page & {
-		padding: 0;
-		transition: padding 1s;
-	}
-
 	.anim-completed & {
-		padding-top: 48px;
 		margin: 0;
-
-		@include media('>=tablet') {
-			padding-top: 62px;
-		}
 	}
 
 	@include media('>=tablet') {
@@ -56,7 +46,6 @@
 	p {
 		margin-bottom: 15px;
 
-
 		&:only-child {
 			margin-bottom: 0;
 		}
@@ -68,16 +57,16 @@
 		display: flex;
 		width: 100%;
 		color: $white;
-		transition: width 0.25s;
 		border-bottom: 1px solid $white;
 		font-size: 20px;
 		line-height: 1.4;
+		opacity: 0;
 
 		.intro-page & {
-			min-height: 100vh;
+			min-height: calc(100vh);
 			opacity: 0;
 			visibility: hidden;
-			transition: all 1s;
+			transition: opacity 0.8s, visibility 0.8s, height 1s;
 		}
 
 		.anim-completed & {
@@ -86,8 +75,8 @@
 			visibility: visible;
 		}
 
-		.reset-class & {
-			transition: width 0.25s;
+		.anim-reset & {
+			transition: opacity 1s, visibility 1s;
 		}
 
 		@include media('>=tablet') {
@@ -100,18 +89,18 @@
 
 			.intro-page & {
 				max-width: 0;
-				height: 100vh;
-				min-height: 0;
+				height: calc(100vh);
+				min-height: 678px;
 			}
 
 			.anim-completed & {
 				height: 678px;
 				max-width: 100%;
-				min-height: 0;
+				min-height: 678px;
 			}
 
-			.reset-class & {
-				transition: width 0.25s;
+			.anim-reset & {
+				transition: width 0.3s;
 			}
 		}
 
@@ -133,37 +122,49 @@
 					padding-left: 132px;
 				}
 			}
+
+			h4 {
+				line-height: 1.3;
+		    font-size: 33px;
+
+				&.title {
+					display: none;
+				}
+			}
 		}
 
 		&.active {
-			min-height: 415px;
+			min-height: 416px;
 			background-color: transparent;
-			border-color: transparent;
-			background-image: none !important;
+			border-bottom: none;
+
+			@include media('>=tablet') {
+				border-right: none;
+			}
 
 			.intro-page & {
 				opacity: 1;
 				visibility: visible;
-				min-height: 100vh;
+				min-height: calc(100vh);
 			}
 
 			.anim-completed & {
-				min-height: 415px;
+				min-height: 416px;
 			}
 
 			@include media('>=tablet') {
 				width: 46%;
-				height: 678px;
+				height: calc(100vh);
 				border: none;
 
 				.intro-page & {
 					position: relative;
 					opacity: 1;
 					visibility: visible;
-					height: 100vh;
+					height: calc(100vh);
 					width: 100%;
 					max-width: 100%;
-					min-height: 0;
+					min-height: calc(100vh);
 				}
 
 				.anim-completed & {
@@ -197,10 +198,20 @@
 			}
 
 			&:after {
-				 background: linear-gradient(to top,  rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+				background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+
+				.intro-page & {
+					right: auto;
+					width: 100vw;
+				}
+
+				.anim-reset & {
+					width: 100%;
+				}
 			}
 
 			.bg-video {
+				transition: 0s linear opacity;
 				opacity: 1;
 				visibility: visible;
 			}
@@ -238,6 +249,32 @@
 			}
 		}
 
+		&:first-child {
+			.intro-page & {
+				overflow: visible;
+			}
+
+			.anim-complete & {
+				overflow: visible;
+			}
+
+			.anim-reset & {
+				overflow: hidden;
+			}
+
+			.bg-video {
+				transition: width 0.8s;
+
+				.intro-page & {
+					width: calc(100vw);
+				}
+
+				.anim-completed & {
+					width: calc(100%);
+				}
+			}
+		}
+
 		&:last-child {
 			&:not(.active) {
 				border-right: none;
@@ -252,9 +289,7 @@
 			right: 0;
 			bottom: 0;
 			z-index: 1;
-			 background: rgba($atlantis, 0.8);
-			.anim-completed & {
-			}
+			background: rgba($atlantis, 0.8);
 		}
 	}
 
@@ -370,9 +405,19 @@
 			padding-left: 86px;
 			padding-right: 86px;
 		}
+
+		a {
+			@extend .btn;
+			@extend .btn-success;
+		}
+
 	}
 
 	.bg-video {
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.5s linear opacity;
+
 		video {
 			position: absolute;
 			left: 50%;
@@ -392,12 +437,12 @@
 
 .intro-content {
 	.full-video {
-		position: fixed;
+		position: absolute;
 		left: 0;
 		top: 0;
 		width: 100%;
-		height: 100vh;
-		transition:  opacity 0.5s, visibility 0.5s;
+		height: calc(100vh);
+		transition:  opacity 0.3s, visibility 0.3s;
 		display: flex;
 		align-items: center;
 		opacity: 1;
