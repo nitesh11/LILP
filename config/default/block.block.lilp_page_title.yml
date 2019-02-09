@@ -1,7 +1,9 @@
 uuid: 3283c45e-424a-40c7-873c-85f36bd606ab
 langcode: en
-status: false
+status: true
 dependencies:
+  module:
+    - system
   theme:
     - lilp
 _core:
@@ -17,4 +19,9 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }
