@@ -1,3 +1,6 @@
+
+{% set media_img_url = file_url(content.field_media.0['#item'].entity.uri.value) %}
+
 <span data-srcset="{{ media_img_url }} 2x"></span>
 <a href="#" class="opener">
  {{ label|render|striptags }}
