@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: connect-with-us
-label: 'Connect with us'
+label: 'Footer: Connect with us'
 description: 'Connect with us Menu block.'
 locked: false

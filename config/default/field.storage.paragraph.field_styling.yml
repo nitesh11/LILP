@@ -13,10 +13,10 @@ settings:
   allowed_values:
     -
       value: add-styling
-      label: 'Add the style of Quotation'
+      label: Quote
     -
       value: no-styling
-      label: 'Render as normal text'
+      label: 'Normal Text'
   allowed_values_function: ''
 module: options
 locked: false

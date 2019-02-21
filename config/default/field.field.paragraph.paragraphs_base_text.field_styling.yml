@@ -11,7 +11,7 @@ id: paragraph.paragraphs_base_text.field_styling
 field_name: field_styling
 entity_type: paragraph
 bundle: paragraphs_base_text
-label: 'Styling option'
+label: 'Text Style'
 description: ''
 required: true
 translatable: false
