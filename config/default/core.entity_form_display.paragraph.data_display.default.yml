@@ -6,10 +6,12 @@ dependencies:
     - field.field.paragraph.data_display.field_infographics
     - field.field.paragraph.data_display.field_paragraphs_base_text
     - field.field.paragraph.data_display.field_title
+    - field.field.paragraph.data_display.field_video
     - paragraphs.paragraphs_type.data_display
   module:
     - paragraphs
     - text
+    - video_embed_field
 id: paragraph.data_display.default
 targetEntityType: paragraph
 bundle: data_display
@@ -42,6 +44,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_video:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
     region: content
 hidden:
   created: true
