@@ -20,28 +20,19 @@ display:
           expose:
             items_per_page_label: 'Itens por página'
             items_per_page_options_all_label: '- Tudo -'
-            offset_label: Offset
       fields:
         comment_bulk_form:
           action_title: Ação
         subject:
           label: Assunto
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
         entity_id:
           label: 'Enviado em'
-          separator: ', '
         changed:
           label: Atualizado
-          separator: ', '
         operations:
           label: Operações
-        name_1:
-          separator: ', '
       filters:
         subject:
           expose:
@@ -84,19 +75,11 @@ display:
           action_title: Ação
         subject:
           label: Assunto
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
         entity_id:
           label: 'Enviado em'
-          separator: ', '
         changed:
           label: Atualizado
-          separator: ', '
         operations:
           label: Operações
-        name_1:
-          separator: ', '

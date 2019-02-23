@@ -1,0 +1,14 @@
+uuid: 3821b274-4cfe-4d11-b173-73a505cc044e
+langcode: en
+status: true
+dependencies: {  }
+id: new_tab
+label: 'New Tab'
+description: ''
+attributes:
+  target:
+    id: target
+    weight: 0
+    settings:
+      widget_type: simple_checkbox
+matchers: {  }

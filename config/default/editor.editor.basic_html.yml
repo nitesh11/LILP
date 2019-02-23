@@ -32,7 +32,7 @@ settings:
         -
           name: Linking
           items:
-            - DrupalLink
+            - Linkit
             - DrupalUnlink
         -
           name: Lists
@@ -59,6 +59,8 @@ settings:
       language_list: un
     stylescombo:
       styles: ''
+    linkit:
+      linkit_profile: new_tab
     video_embed:
       defaults:
         children:

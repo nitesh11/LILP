@@ -1,0 +1,30 @@
+uuid: c2b2d698-93b0-4eb7-9523-3c4a6a8dd598
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_page_type
+field_name: field_page_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: city
+      label: 'City Page'
+    -
+      value: theme
+      label: 'Theme Page'
+    -
+      value: content
+      label: 'Static Page'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

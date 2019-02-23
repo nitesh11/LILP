@@ -12,6 +12,7 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
@@ -31,6 +32,7 @@ module:
   libraries: 0
   link: 0
   link_attributes: 0
+  linkit: 0
   locale: 0
   media: 0
   menu_ui: 0
@@ -48,6 +50,7 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   user: 0
@@ -56,6 +59,7 @@ module:
   video_embed_wysiwyg: 0
   views_ui: 0
   menu_link_content: 1
+  pathauto: 1
   content_translation: 10
   views: 10
   paragraphs: 11

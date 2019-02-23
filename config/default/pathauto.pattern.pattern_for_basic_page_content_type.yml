@@ -1,0 +1,22 @@
+uuid: ae116d86-6cba-4a20-a752-eafa82c61393
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pattern_for_basic_page_content_type
+label: 'Pattern for Basic Page Content type'
+type: 'canonical_entities:node'
+pattern: '[node:field_page_type:value]/[node:title]'
+selection_criteria:
+  e7a6a05e-ea47-4b5c-8dd7-20dceacef472:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e7a6a05e-ea47-4b5c-8dd7-20dceacef472
+selection_logic: and
+weight: -5
+relationships: {  }
