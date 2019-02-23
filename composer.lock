@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ebe4cec8827ff61ad20da6a5b51cf3dc",
+    "content-hash": "e2786ebeeebb5afc9e5e46722a756f0b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2396,6 +2396,17 @@
                 "url"
             ],
             "time": "2018-12-04T20:46:45+00:00"
+        },
+        {
+            "name": "jackmoore/colorbox",
+            "version": "1.6.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
         },
         {
             "name": "masterminds/html5",
