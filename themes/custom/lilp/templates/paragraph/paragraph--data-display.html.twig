@@ -61,8 +61,8 @@
           <div class="col-sm-8 col-lg-9">
             <div class="data-infographics-desscription rt-col">
               {{ content.field_paragraphs_base_text }}
-              <div class="actual-video">
-                <a class="colorbox" href="https://www.youtube.com/watch?v=pXPHSaj8qSw">Watch a Video</a>
+              <div class="popup">
+                <a class="colorbox" href="{{ content.field_link[0]['#url']|render }}">{{ content.field_link[0]['#title']|render }}</a>
               </div>
             </div>
           </div>

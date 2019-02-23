@@ -4,14 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.data_display.field_infographics
+    - field.field.paragraph.data_display.field_link
     - field.field.paragraph.data_display.field_paragraphs_base_text
     - field.field.paragraph.data_display.field_title
-    - field.field.paragraph.data_display.field_video
     - paragraphs.paragraphs_type.data_display
   module:
     - entity_reference_revisions
+    - link
     - text
-    - video_embed_field
 id: paragraph.data_display.default
 targetEntityType: paragraph
 bundle: data_display
@@ -25,6 +25,18 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_paragraphs_base_text:
     weight: 1
@@ -40,16 +52,5 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-  field_video:
-    weight: 3
-    label: above
-    settings:
-      responsive: true
-      width: 854
-      height: 480
-      autoplay: true
-    third_party_settings: {  }
-    type: video_embed_field_video
     region: content
 hidden: {  }

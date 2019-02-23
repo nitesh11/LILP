@@ -4,14 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.data_display.field_infographics
+    - field.field.paragraph.data_display.field_link
     - field.field.paragraph.data_display.field_paragraphs_base_text
     - field.field.paragraph.data_display.field_title
-    - field.field.paragraph.data_display.field_video
     - paragraphs.paragraphs_type.data_display
   module:
+    - link
     - paragraphs
     - text
-    - video_embed_field
 id: paragraph.data_display.default
 targetEntityType: paragraph
 bundle: data_display
@@ -19,7 +19,7 @@ mode: default
 content:
   field_infographics:
     type: entity_reference_paragraphs
-    weight: 2
+    weight: 3
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -28,6 +28,14 @@ content:
       form_display_mode: default
       default_paragraph_type: infographic
     third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   field_paragraphs_base_text:
     weight: 1
@@ -44,12 +52,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_video:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: video_embed_field_textfield
     region: content
 hidden:
   created: true
