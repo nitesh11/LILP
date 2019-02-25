@@ -1,5 +1,0 @@
-custom:
-  text_current: '{current} de {total}'
-  text_previous: '« Anterior'
-  text_next: 'Próximo »'
-  text_close: Fechar
