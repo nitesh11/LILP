@@ -9,7 +9,6 @@ dependencies:
     - node.type.page
   module:
     - entity_reference_revisions
-    - options
     - text
     - user
 _core:
@@ -35,17 +34,11 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
-  field_page_type:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   links:
     weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_page_type: true
   langcode: true

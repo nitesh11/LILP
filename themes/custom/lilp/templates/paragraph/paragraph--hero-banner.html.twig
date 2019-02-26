@@ -52,7 +52,12 @@
   {% block paragraph %}
     {% block content %}
       <div class="bg-holder fade-in">
-        <img src="{{ file_url(paragraph.field_paragraphs_base_image.entity.fileuri) }}" alt="image description" />
+
+        {% if content.field_video_id is not empty %}
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/{{content.field_video_id}}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% else %}
+          <img src="{{ file_url(paragraph.field_paragraphs_base_image.entity.fileuri) }}" alt="image description" />
+        {% endif %}
       </div>
       <div class="container">
         <div class="text-holder">

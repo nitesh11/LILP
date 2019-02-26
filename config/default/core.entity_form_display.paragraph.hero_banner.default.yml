@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.hero_banner.field_paragraphs_base_text
     - field.field.paragraph.hero_banner.field_scroll_text
     - field.field.paragraph.hero_banner.field_title
+    - field.field.paragraph.hero_banner.field_video_id
     - image.style.thumbnail
     - paragraphs.paragraphs_type.hero_banner
   module:
@@ -34,7 +35,7 @@ content:
     type: text_textarea
     region: content
   field_scroll_text:
-    weight: 3
+    weight: 4
     settings:
       size: 60
       placeholder: ''
@@ -43,6 +44,14 @@ content:
     region: content
   field_title:
     weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_video_id:
+    weight: 3
     settings:
       size: 60
       placeholder: ''

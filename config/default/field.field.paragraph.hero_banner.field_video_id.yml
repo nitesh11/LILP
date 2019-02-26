@@ -1,0 +1,19 @@
+uuid: f9973463-3ce7-4469-8b70-d5bd38c1ebd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video_id
+    - paragraphs.paragraphs_type.hero_banner
+id: paragraph.hero_banner.field_video_id
+field_name: field_video_id
+entity_type: paragraph
+bundle: hero_banner
+label: 'Video ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

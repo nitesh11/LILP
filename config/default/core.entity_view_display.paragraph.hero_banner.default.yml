@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.hero_banner.field_paragraphs_base_text
     - field.field.paragraph.hero_banner.field_scroll_text
     - field.field.paragraph.hero_banner.field_title
+    - field.field.paragraph.hero_banner.field_video_id
     - paragraphs.paragraphs_type.hero_banner
   module:
     - image
@@ -26,14 +27,14 @@ content:
     type: image
     region: content
   field_paragraphs_base_text:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_scroll_text:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       link_to_entity: false
@@ -41,6 +42,14 @@ content:
     type: string
     region: content
   field_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_video_id:
     weight: 1
     label: hidden
     settings:
